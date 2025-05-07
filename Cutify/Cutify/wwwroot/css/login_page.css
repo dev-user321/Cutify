@@ -1,0 +1,192 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+/* Back Button */
+.back-button {
+    margin-bottom: 20px; /* Yazı ilə məsafə üçün */
+}
+
+    .back-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        color: #333;
+        font-size: 18px;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+
+        .back-button a:hover {
+            background-color: #f8f8f8;
+        }
+
+.login-header {
+    margin-bottom: 25px;
+}
+
+    .login-header h1 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 15px;
+    }
+
+    .login-header p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+    }
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 15px;
+        transition: border-color 0.3s;
+    }
+
+        .form-group input:focus {
+            border-color: #333;
+            outline: none;
+        }
+
+.password-field {
+    position: relative;
+}
+
+    .password-field input {
+        padding-right: 40px;
+    }
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .submit-btn:hover {
+        background-color: #000;
+    }
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+    .forgot-password a {
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+.register-link {
+    margin-top: 25px;
+    text-align: center;
+}
+
+    .register-link p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .register-link a {
+        color: #333;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .login-header h1 {
+        font-size: 24px;
+    }
+
+    .login-header p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 20px 15px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+    }
+
+    .submit-btn {
+        padding: 12px;
+    }
+}

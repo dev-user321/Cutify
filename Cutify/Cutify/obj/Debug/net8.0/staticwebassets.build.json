@@ -1,0 +1,949 @@
+{
+  "Version": 1,
+  "Hash": "lYxqPhnGhzsRSIlzbTYliPm98xg+QpoTvUo8yJkOB2I=",
+  "Source": "Cutify",
+  "BasePath": "_content/Cutify",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Cutify\\wwwroot",
+      "Source": "Cutify",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\confirm_email_page.css",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "css/confirm_email_page#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8o5jhnjd2e",
+      "Integrity": "iH9ooY5b48TDSUIlTOrEvx+ot2hn/6P1PQRtmPyXpDc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\confirm_email_page.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\home_page.css",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "css/home_page#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jg2u31zbgd",
+      "Integrity": "896ce4VC1DY9AfZkFNzMvRuqtYm4wHT28GlLOJOYaGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home_page.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\login_page.css",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "css/login_page#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r9nu3aoean",
+      "Integrity": "seN7An43s4Wn7SjFPgViqJ04RgN9WHwP4ongBVyTmfs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login_page.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\register_page.css",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "css/register_page#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o0vik2twfb",
+      "Integrity": "eObkjfhZuPzznws/AxisYKEg56DrMnUd73qaUjMwjRE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\register_page.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\verify_email_page.css",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "css/verify_email_page#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b3cc7i8edf",
+      "Integrity": "yUiLb3KMCYOKpYrP2gD1vOe0Ch/07ShGFU4VZP0EJXY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\verify_email_page.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\img\\R (1).jpeg",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "img/R (1)#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cv23qrlfbx",
+      "Integrity": "SOfM6bQ8pB1UvIM+P+de1Ru6PltmRU9lCz2z7hnJyME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\R (1).jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\login_page.js",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "js/login_page#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9d97hzusf3",
+      "Integrity": "09eUxc5WzFm7Yz4AocgfNzcRhtwOOCUEDzEfsKMx5F8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login_page.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\register_page.js",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "js/register_page#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dw59916rgi",
+      "Integrity": "HfNqFvxv5NcoGiHAPzVfHAfn89MIx8B3+WRxXeGC6CI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\register_page.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\verify_email_page.js",
+      "SourceId": "Cutify",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\",
+      "BasePath": "_content/Cutify",
+      "RelativePath": "js/verify_email_page#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "56mhr2hbdt",
+      "Integrity": "fZ0TGqyGkKB8YVSB3+UGl5/mAR4ahIiBMr5Wbzn7k+w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\verify_email_page.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/confirm_email_page.8o5jhnjd2e.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\confirm_email_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iH9ooY5b48TDSUIlTOrEvx+ot2hn/6P1PQRtmPyXpDc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:28:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8o5jhnjd2e"
+        },
+        {
+          "Name": "label",
+          "Value": "css/confirm_email_page.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iH9ooY5b48TDSUIlTOrEvx+ot2hn/6P1PQRtmPyXpDc="
+        }
+      ]
+    },
+    {
+      "Route": "css/confirm_email_page.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\confirm_email_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iH9ooY5b48TDSUIlTOrEvx+ot2hn/6P1PQRtmPyXpDc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:28:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iH9ooY5b48TDSUIlTOrEvx+ot2hn/6P1PQRtmPyXpDc="
+        }
+      ]
+    },
+    {
+      "Route": "css/home_page.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\home_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"896ce4VC1DY9AfZkFNzMvRuqtYm4wHT28GlLOJOYaGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:20:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-896ce4VC1DY9AfZkFNzMvRuqtYm4wHT28GlLOJOYaGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/home_page.jg2u31zbgd.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\home_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3638"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"896ce4VC1DY9AfZkFNzMvRuqtYm4wHT28GlLOJOYaGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:20:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jg2u31zbgd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/home_page.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-896ce4VC1DY9AfZkFNzMvRuqtYm4wHT28GlLOJOYaGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/login_page.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\login_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seN7An43s4Wn7SjFPgViqJ04RgN9WHwP4ongBVyTmfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:41:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-seN7An43s4Wn7SjFPgViqJ04RgN9WHwP4ongBVyTmfs="
+        }
+      ]
+    },
+    {
+      "Route": "css/login_page.r9nu3aoean.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\login_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seN7An43s4Wn7SjFPgViqJ04RgN9WHwP4ongBVyTmfs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:41:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r9nu3aoean"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login_page.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-seN7An43s4Wn7SjFPgViqJ04RgN9WHwP4ongBVyTmfs="
+        }
+      ]
+    },
+    {
+      "Route": "css/register_page.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\register_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eObkjfhZuPzznws/AxisYKEg56DrMnUd73qaUjMwjRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eObkjfhZuPzznws/AxisYKEg56DrMnUd73qaUjMwjRE="
+        }
+      ]
+    },
+    {
+      "Route": "css/register_page.o0vik2twfb.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\register_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eObkjfhZuPzznws/AxisYKEg56DrMnUd73qaUjMwjRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 04:36:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o0vik2twfb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/register_page.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eObkjfhZuPzznws/AxisYKEg56DrMnUd73qaUjMwjRE="
+        }
+      ]
+    },
+    {
+      "Route": "css/verify_email_page.b3cc7i8edf.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\verify_email_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yUiLb3KMCYOKpYrP2gD1vOe0Ch/07ShGFU4VZP0EJXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:19:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b3cc7i8edf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/verify_email_page.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yUiLb3KMCYOKpYrP2gD1vOe0Ch/07ShGFU4VZP0EJXY="
+        }
+      ]
+    },
+    {
+      "Route": "css/verify_email_page.css",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\verify_email_page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yUiLb3KMCYOKpYrP2gD1vOe0Ch/07ShGFU4VZP0EJXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:19:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yUiLb3KMCYOKpYrP2gD1vOe0Ch/07ShGFU4VZP0EJXY="
+        }
+      ]
+    },
+    {
+      "Route": "img/R (1).cv23qrlfbx.jpeg",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\img\\R (1).jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SOfM6bQ8pB1UvIM+P+de1Ru6PltmRU9lCz2z7hnJyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:48:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cv23qrlfbx"
+        },
+        {
+          "Name": "label",
+          "Value": "img/R (1).jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SOfM6bQ8pB1UvIM+P+de1Ru6PltmRU9lCz2z7hnJyME="
+        }
+      ]
+    },
+    {
+      "Route": "img/R (1).jpeg",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\img\\R (1).jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "153226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SOfM6bQ8pB1UvIM+P+de1Ru6PltmRU9lCz2z7hnJyME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 09:48:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SOfM6bQ8pB1UvIM+P+de1Ru6PltmRU9lCz2z7hnJyME="
+        }
+      ]
+    },
+    {
+      "Route": "js/login_page.9d97hzusf3.js",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\login_page.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "520"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"09eUxc5WzFm7Yz4AocgfNzcRhtwOOCUEDzEfsKMx5F8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:38:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9d97hzusf3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/login_page.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-09eUxc5WzFm7Yz4AocgfNzcRhtwOOCUEDzEfsKMx5F8="
+        }
+      ]
+    },
+    {
+      "Route": "js/login_page.js",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\login_page.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "520"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"09eUxc5WzFm7Yz4AocgfNzcRhtwOOCUEDzEfsKMx5F8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:38:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-09eUxc5WzFm7Yz4AocgfNzcRhtwOOCUEDzEfsKMx5F8="
+        }
+      ]
+    },
+    {
+      "Route": "js/register_page.dw59916rgi.js",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\register_page.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HfNqFvxv5NcoGiHAPzVfHAfn89MIx8B3+WRxXeGC6CI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:38:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dw59916rgi"
+        },
+        {
+          "Name": "label",
+          "Value": "js/register_page.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HfNqFvxv5NcoGiHAPzVfHAfn89MIx8B3+WRxXeGC6CI="
+        }
+      ]
+    },
+    {
+      "Route": "js/register_page.js",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\register_page.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "551"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HfNqFvxv5NcoGiHAPzVfHAfn89MIx8B3+WRxXeGC6CI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:38:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HfNqFvxv5NcoGiHAPzVfHAfn89MIx8B3+WRxXeGC6CI="
+        }
+      ]
+    },
+    {
+      "Route": "js/verify_email_page.56mhr2hbdt.js",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\verify_email_page.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fZ0TGqyGkKB8YVSB3+UGl5/mAR4ahIiBMr5Wbzn7k+w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:34:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "56mhr2hbdt"
+        },
+        {
+          "Name": "label",
+          "Value": "js/verify_email_page.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fZ0TGqyGkKB8YVSB3+UGl5/mAR4ahIiBMr5Wbzn7k+w="
+        }
+      ]
+    },
+    {
+      "Route": "js/verify_email_page.js",
+      "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\verify_email_page.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1831"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fZ0TGqyGkKB8YVSB3+UGl5/mAR4ahIiBMr5Wbzn7k+w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 05:34:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fZ0TGqyGkKB8YVSB3+UGl5/mAR4ahIiBMr5Wbzn7k+w="
+        }
+      ]
+    }
+  ]
+}

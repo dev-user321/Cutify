@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxil ol</title>
+    <link rel="stylesheet" href="~/css/login_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="back-button">
+            <a asp-controller="Home" asp-action="Index"><i class="fas fa-chevron-left"></i></a>
+        </div>
+        <div class="login-header">
+            <h1>Daxil ol</h1>
+            <p>Gündəlik görüşlərini yoxla, müştərilərinin rezervasiyalarını asanlıqla izləməyə başla.</p>
+        </div>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">İstifadəçi adın</label>
+                <input type="text" id="username" name="username" value="Rəşad Hüseynov" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Şifrən</label>
+                <div class="password-field">
+                    <input type="password" id="password" name="password" value="••••••••••" required>
+                    <span class="password-toggle">
+                        <i class="fas fa-eye-slash"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="forgot-password">
+                <a asp-controller="Account" asp-action="ConfirmEmail">Şifrəni unutdum</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Daxil ol</button>
+
+            <div class="register-link">
+                <p>Hesabın yoxdur? <a asp-controller="Account" asp-action="Register">Qeydiyyatdan keç</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="~/js/login_page.js">
+      
+    </script>
+</body>
+</html>

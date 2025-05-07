@@ -1,0 +1,9 @@
+wwwroot\css\confirm_email_page.css
+wwwroot\css\home_page.css
+wwwroot\css\login_page.css
+wwwroot\css\register_page.css
+wwwroot\css\verify_email_page.css
+wwwroot\img\R (1).jpeg
+wwwroot\js\login_page.js
+wwwroot\js\register_page.js
+wwwroot\js\verify_email_page.js

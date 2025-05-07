@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\confirm_email_page.css",
+      "PackagePath": "staticwebassets\\css\\confirm_email_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\home_page.css",
+      "PackagePath": "staticwebassets\\css\\home_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\login_page.css",
+      "PackagePath": "staticwebassets\\css\\login_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\register_page.css",
+      "PackagePath": "staticwebassets\\css\\register_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\verify_email_page.css",
+      "PackagePath": "staticwebassets\\css\\verify_email_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\img\\R (1).jpeg",
+      "PackagePath": "staticwebassets\\img\\R (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\login_page.js",
+      "PackagePath": "staticwebassets\\js\\login_page.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\register_page.js",
+      "PackagePath": "staticwebassets\\js\\register_page.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\verify_email_page.js",
+      "PackagePath": "staticwebassets\\js\\verify_email_page.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Cutify.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Cutify.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Cutify.props",
+      "PackagePath": "build\\Cutify.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Cutify.props",
+      "PackagePath": "buildMultiTargeting\\Cutify.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Cutify.props",
+      "PackagePath": "buildTransitive\\Cutify.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

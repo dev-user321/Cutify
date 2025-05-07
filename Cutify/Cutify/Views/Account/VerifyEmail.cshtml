@@ -1,0 +1,41 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Verification</title>
+    <link rel="stylesheet" href="~/css/verify_email_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-button">
+            <a asp-controller="Account" asp-action="ConfirmEmail"><i class="fas fa-chevron-left"></i></a>
+        </div>
+
+        <h1>Hesabını təsdiq et</h1>
+        <p>Reshad@gmail.com e-poçt ünvanına göndərilən təsdiq kodunu daxil edərək hesabını təsdiqlə.</p>
+
+        <form id="verificationForm" asp-controller="Account" asp-action="VerifyEmail" method="post">
+            <div class="code-container">
+                <input type="text" class="code-input" name="code1" maxlength="1" value="1" required>
+                <input type="text" class="code-input" name="code2" maxlength="1" value="2" required>
+                <input type="text" class="code-input" name="code3" maxlength="1" value="3" required>
+                <input type="text" class="code-input" name="code4" maxlength="1" placeholder="-" required>
+            </div>
+
+            <div class="timer-container">
+                <span class="timer">00:59</span>
+                <button type="button" class="resend-link">Yenidən kod göndərin</button>
+            </div>
+
+            <button type="submit" class="verify-button">Təsdiq et</button>
+        </form>
+    </div>
+
+    <script src="~/js/verify_email_page.js"></script>
+</body>
+</html>
