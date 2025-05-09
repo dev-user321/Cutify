@@ -1,15 +1,6 @@
-﻿using AutoMapper;
-using Cutify.Data;
-using Cutify.Helper;
-using Cutify.Models;
-using Cutify.Services.Interface;
+﻿using Cutify.Services.Interface;
 using Cutify.ViewModels;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 
 namespace Cutify.Controllers

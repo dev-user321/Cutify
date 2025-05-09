@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<AppUser>
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -9,7 +10,6 @@
     <title>Bərbərini Seç</title>
     <link rel="stylesheet" href="~/css/select_barber_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
     <div class="container">
@@ -25,62 +25,58 @@
             Sənin üçün uyğun olan bərbəri seç və rahatlıqla növbəti addıma keç.
         </div>
 
-        <form id="barber-form" action="/select-barber" method="POST">
+        <form asp-controller="Reservation" asp-action="Search" method="post" enctype="multipart/form-data">
             <div class="search-container">
-                <input type="text" name="search" class="search-input" placeholder="Bərbər axtar..." id="search-input">
+                <input type="text" name="search" class="search-input" placeholder="Bərbər axtar..." value="@ViewBag.SearchQuery" id="search-input">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i> Axtar
+                </button>
             </div>
+        </form>
 
+        <form id="barber-form" asp-controller="Reservation" asp-action="EnterInfo" method="get">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
             <div class="barber-grid" id="barber-grid">
-                <!-- Barber 1 -->
-                <div>
-                    <input type="radio" name="barber" value="1" id="barber-1" class="radio-input">
-                    <label for="barber-1" class="barber-card">
-                        <img src="/api/placeholder/150/150" alt="Murad Əliyev" class="barber-img">
-                        <div class="barber-name">Murad Əliyev</div>
-                    </label>
-                </div>
-
-                <!-- Barber 2 -->
-                <div>
-                    <input type="radio" name="barber" value="2" id="barber-2" class="radio-input">
-                    <label for="barber-2" class="barber-card">
-                        <img src="/api/placeholder/150/150" alt="Rəşad Hüseynov" class="barber-img">
-                        <div class="barber-name">Rəşad Hüseynov</div>
-                    </label>
-                </div>
-
-                <!-- Barber 3 -->
-                <div>
-                    <input type="radio" name="barber" value="3" id="barber-3" class="radio-input">
-                    <label for="barber-3" class="barber-card">
-                        <img src="/api/placeholder/150/150" alt="Tural Məmmədov" class="barber-img">
-                        <div class="barber-name">Tural Məmmədov</div>
-                    </label>
-                </div>
-
-                <!-- Barber 4 -->
-                <div>
-                    <input type="radio" name="barber" value="4" id="barber-4" class="radio-input">
-                    <label for="barber-4" class="barber-card">
-                        <img src="/api/placeholder/150/150" alt="Farid Quliyev" class="barber-img">
-                        <div class="barber-name">Farid Quliyev</div>
-                    </label>
-                </div>
+                @foreach (var barber in Model)
+                {
+                    <div>
+                        <input type="radio" name="barberId" value="@barber.Id" id="barber-@barber.Id" class="radio-input">
+                        <label for="barber-@barber.Id" class="barber-card">
+                            <img src="~/img/@barber.UserImage" alt="@barber.Name @barber.LastName" class="barber-img">
+                            <div class="barber-name">@barber.Name @barber.LastName</div>
+                        </label>
+                    </div>
+                }
             </div>
 
             <div class="pagination">
-                <a href="?page=1" class="page-btn active">1</a>
-                <a href="?page=2" class="page-btn">2</a>
-                <a href="?page=3" class="page-btn">3</a>
+                @if (ViewBag.CurrentPage > 1)
+                {
+                    <a asp-controller="Reservation" asp-action="SelectBarber" asp-route-pageNumber="@(ViewBag.CurrentPage - 1)" class="page-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                }
+
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <a asp-controller="Reservation" asp-action="SelectBarber" asp-route-pageNumber="@i" class="page-btn @(i == ViewBag.CurrentPage ? "active" : "")">@i</a>
+                }
+
+                @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                {
+                    <a asp-controller="Reservation" asp-action="SelectBarber" asp-route-pageNumber="@(ViewBag.CurrentPage + 1)" class="page-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                }
             </div>
 
             <input type="hidden" name="page" value="1">
-            <a type="submit" class="submit-button" style="text-decoration:none;" asp-controller="Reservation" asp-action="EnterInfo">Davam et</a>
+            <button type="submit" class="submit-button">Davam et</button>
         </form>
     </div>
+
+    <script src="~/js/select_barber_page.js"></script>
 </body>
 </html>

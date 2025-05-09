@@ -1,4 +1,4 @@
-﻿
+﻿@model ReservationVM 
 @{
     Layout = null;
 }
@@ -36,7 +36,7 @@
             <form id="user-info-form" action="/submit-reservation" method="POST">
                 <div class="form-group">
                     <label for="barber-name" class="form-label">Bərbərin adı və soyadı</label>
-                    <input type="text" id="barber-name" name="barber-name" class="form-input" value="Rəşad Hüseynov" readonly>
+                    <input type="text" id="barber-name" name="barber-name" class="form-input" value="@Model.BarberFullName" readonly>
                 </div>
 
                 <div class="form-row">

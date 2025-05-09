@@ -24,7 +24,6 @@ body {
     align-items: center;
     border-bottom: 1px solid #eee;
 }
-
 /* Back Button */
 .back-button {
     top: 20px;
@@ -64,10 +63,12 @@ body {
 
 .search-container {
     padding: 0 16px 16px;
+    display: flex;
+    gap: 8px;
 }
 
 .search-input {
-    width: 100%;
+    flex: 1;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -77,6 +78,23 @@ body {
 
     .search-input:focus {
         border-color: #999;
+    }
+
+.search-button {
+    padding: 0 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+    .search-button:hover {
+        background-color: #222;
     }
 
 .progress-bar {
@@ -96,6 +114,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     padding: 0 16px;
+    margin-bottom: 20px;
 }
 
 .barber-card {
@@ -172,6 +191,7 @@ body {
     font-weight: 500;
     border: none;
     font-size: 16px;
+    transition: background-color 0.2s;
 }
 
     .submit-button:hover {
@@ -197,5 +217,4 @@ body {
         border-color: #333;
         background-color: #f9f9f9;
     }
-
 
