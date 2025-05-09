@@ -51,14 +51,14 @@
     <StaticWebAssetEndpoint Include="_content/Cutify/css/my_reservations_page.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\my_reservations_page.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YT7YFt9n2bOSthGwVBsYpxagbQoiw6D3KWBHjo6L/Zs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2397"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YT7YFt9n2bOSthGwVBsYpxagbQoiw6D3KWBHjo6L/Zs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 15:34:43 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3146"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 19:05:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Cutify/css/my_reservations_page.zrbwe85moa.css">
+    <StaticWebAssetEndpoint Include="_content/Cutify/css/my_reservations_page.oyr88dy0zp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\my_reservations_page.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zrbwe85moa"},{"Name":"integrity","Value":"sha256-YT7YFt9n2bOSthGwVBsYpxagbQoiw6D3KWBHjo6L/Zs="},{"Name":"label","Value":"_content/Cutify/css/my_reservations_page.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2397"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YT7YFt9n2bOSthGwVBsYpxagbQoiw6D3KWBHjo6L/Zs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 15:34:43 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oyr88dy0zp"},{"Name":"integrity","Value":"sha256-cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI="},{"Name":"label","Value":"_content/Cutify/css/my_reservations_page.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3146"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 19:05:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Cutify/css/register_page.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\register_page.css'))</AssetFile>

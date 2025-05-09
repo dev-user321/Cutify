@@ -10,7 +10,7 @@
     <title>Rezervasiyalarım</title>
     <link rel="stylesheet" href="~/css/my_reservations_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
     <div class="container">
@@ -26,16 +26,16 @@
         </div>
 
         <div class="date-selector">
-            
-            <div>
-                <div class="date-label">Tarix</div>
-                <div class="date-value">02/05/2025</div>
-            </div>
-            <button class="search-button">Axtar</button>
+            <form method="post" asp-controller="Reservation" asp-action="ReservationList" class="date-form">
+                <input type="text" name="selectedDate" id="selectedDate" class="calendar-input" placeholder="Tarix seçin" required />
+                <button class="search-button" type="submit">Axtar</button>
+            </form>
         </div>
 
+
+
         <div class="reservations-list">
-            @foreach(var reservation in Model)
+            @foreach (var reservation in Model)
             {
                 <div class="reservation-card">
                     <div class="reservation-time">@reservation.Time</div>
@@ -43,8 +43,18 @@
                     <div class="customer-phone">@reservation.PhoneNumber</div>
                 </div>
             }
-           
+
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#selectedDate", {
+            dateFormat: "Y-m-d",
+            minDate: "today",
+            locale: {
+                firstDayOfWeek: 1
+            }
+        });
+    </script>
 </body>
 </html>

@@ -16,17 +16,20 @@ namespace Cutify.Controllers
         private readonly IReservationRepository _reservationRepository;
         private readonly IErrorLogRepository _errorLogRepository;
         private readonly IMapper _mapper;
+        private readonly AppDbContext _context;
 
         public ReservationController(
             IUserRepository userRepository,
             IReservationRepository reservationRepository,
             IErrorLogRepository errorLogRepository,
-            IMapper mapper)
+            IMapper mapper,
+            AppDbContext context)
         {
             _userRepository = userRepository;
             _reservationRepository = reservationRepository;
             _errorLogRepository = errorLogRepository;
             _mapper = mapper;
+            _context = context;
         }
 
         public async Task<IActionResult> SelectBarber(int pageNumber = 1, int pageSize = 4, string search = "")
@@ -165,5 +168,11 @@ namespace Cutify.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult ReservationList(DateTime selectedDate)
+        {
+            return RedirectToAction("MyReservations", "Account", new { date = selectedDate });
+        }
+
     }
 }
