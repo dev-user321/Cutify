@@ -1,4 +1,5 @@
-﻿@{
+﻿@model RegisterVM
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -8,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qeydiyyatdan keç</title>
     <link rel="stylesheet" href="~/css/register_page.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -21,50 +21,59 @@
             <p>Şəxsi hesabını yarat və salon işlərini daha effektiv şəkildə idarə et.</p>
         </div>
 
-        <form action="#" method="post">
+        <form asp-action="Register" asp-controller="Account" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="profile-section">
                 <div class="profile-image">
-                    <div class="avatar-placeholder">
-                        <i class="fas fa-user"></i>
+                    <div class="avatar-placeholder" id="avatar-preview">
+                        <i class="fas fa-user" id="default-icon"></i>
+                        <img id="profile-image-preview" style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" alt="Profile Preview">
                     </div>
                 </div>
                 <div class="upload-button">
-                    <button type="button" class="upload-btn">
+                    <label for="Image" class="upload-btn">
                         <i class="fas fa-upload"></i> Şəkil yüklə
-                    </button>
+                    </label>
+                    <input type="file" id="Image" asp-for="Image" style="display: none;">
+                    <span asp-validation-for="Image" class="text-danger"></span>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group half">
-                    <label for="firstname">Adın</label>
-                    <input type="text" id="firstname" name="firstname" value="Rəşad" required>
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
-
                 <div class="form-group half">
-                    <label for="lastname">Soyadın</label>
-                    <input type="text" id="lastname" name="lastname" value="Hüseynov" required>
+                    <label asp-for="LastName"></label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="email">E-poçt ünvanın</label>
-                <input type="email" id="email" name="email" value="reshad@gmail.com" required>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label for="workplace">İş yeri ünvanın</label>
-                <input type="text" id="workplace" name="workplace" value="Barber House Narimanov" required>
+                <label asp-for="Address"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label for="password">Şifrən</label>
+                <label asp-for="Password"></label>
                 <div class="password-field">
-                    <input type="password" id="password" name="password" value="••••••••••" required>
+                    <input asp-for="Password" class="form-control" type="password" id="password" />
                     <span class="password-toggle">
-                        <i class="fas fa-eye-slash"></i>
+                        <i class="fas fa-eye-slash" id="password-toggle-icon"></i>
                     </span>
                 </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
             </div>
 
             <button type="submit" class="submit-btn">Qeydiyyatdan keç</button>
@@ -75,7 +84,6 @@
         </form>
     </div>
 
-    <script src="~/js/register_page.js">
-    </script>
+    <script src="~/js/register_page.js"></script>
 </body>
 </html>

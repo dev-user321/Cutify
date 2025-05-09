@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\confirm_email_page.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\enter_info_page.css",
+      "PackagePath": "staticwebassets\\css\\enter_info_page.css"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\home_page.css",
       "PackagePath": "staticwebassets\\css\\home_page.css"
     },
@@ -13,16 +17,36 @@
       "PackagePath": "staticwebassets\\css\\login_page.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\my_reservations_page.css",
+      "PackagePath": "staticwebassets\\css\\my_reservations_page.css"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\register_page.css",
       "PackagePath": "staticwebassets\\css\\register_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\reset_password_page.css",
+      "PackagePath": "staticwebassets\\css\\reset_password_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\select_barber_page.css",
+      "PackagePath": "staticwebassets\\css\\select_barber_page.css"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\success_message_page.css",
+      "PackagePath": "staticwebassets\\css\\success_message_page.css"
     },
     {
       "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\verify_email_page.css",
       "PackagePath": "staticwebassets\\css\\verify_email_page.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\img\\R (1).jpeg",
-      "PackagePath": "staticwebassets\\img\\R (1).jpeg"
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\img\\0a74c7ee-0ce0-46fb-9a32-14dfeab5bcc9OIP (3).jpeg",
+      "PackagePath": "staticwebassets\\img\\0a74c7ee-0ce0-46fb-9a32-14dfeab5bcc9OIP (3).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\img\\8691d3e1-683b-4dff-85e1-93382834a99d.jpeg",
+      "PackagePath": "staticwebassets\\img\\8691d3e1-683b-4dff-85e1-93382834a99d.jpeg"
     },
     {
       "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\login_page.js",
@@ -33,8 +57,16 @@
       "PackagePath": "staticwebassets\\js\\register_page.js"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\reset_password_page.js",
+      "PackagePath": "staticwebassets\\js\\reset_password_page.js"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\verify_email_page.js",
       "PackagePath": "staticwebassets\\js\\verify_email_page.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\templates\\verify.html",
+      "PackagePath": "staticwebassets\\templates\\verify.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Cutify.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

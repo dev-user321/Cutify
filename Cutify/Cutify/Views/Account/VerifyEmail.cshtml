@@ -21,15 +21,15 @@
 
         <form id="verificationForm" asp-controller="Account" asp-action="VerifyEmail" method="post">
             <div class="code-container">
-                <input type="text" class="code-input" name="code1" maxlength="1" value="1" required>
-                <input type="text" class="code-input" name="code2" maxlength="1" value="2" required>
-                <input type="text" class="code-input" name="code3" maxlength="1" value="3" required>
-                <input type="text" class="code-input" name="code4" maxlength="1" placeholder="-" required>
+                <input type="text" class="code-input" name="code1" maxlength="1" required>
+                <input type="text" class="code-input" name="code2" maxlength="1" required>
+                <input type="text" class="code-input" name="code3" maxlength="1" required>
+                <input type="text" class="code-input" name="code4" maxlength="1" required>
             </div>
 
             <div class="timer-container">
                 <span class="timer">00:59</span>
-                <button type="button" class="resend-link">Yenidən kod göndərin</button>
+                <a type="button" class="resend-link" asp-controller="Account" asp-action="SendAgain">Yenidən kod göndərin</a>
             </div>
 
             <button type="submit" class="verify-button">Təsdiq et</button>

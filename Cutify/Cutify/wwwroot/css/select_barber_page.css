@@ -1,0 +1,201 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Back Button */
+.back-button {
+    top: 20px;
+    left: 20px;
+    margin-bottom: 20px;
+}
+
+    .back-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        color: #333;
+        font-size: 18px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+
+        .back-button a:hover {
+            background-color: #f8f8f8;
+        }
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.description {
+    padding: 16px;
+    color: #666;
+    font-size: 14px;
+}
+
+.search-container {
+    padding: 0 16px 16px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+    .search-input:focus {
+        border-color: #999;
+    }
+
+.progress-bar {
+    height: 4px;
+    background-color: #eee;
+    margin: 0 16px 24px;
+}
+
+.progress {
+    width: 33%;
+    height: 100%;
+    background-color: #666;
+}
+
+.barber-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 0 16px;
+}
+
+.barber-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+    .barber-card:hover {
+        border-color: #999;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .barber-card.selected {
+        border-color: #333;
+        background-color: #f9f9f9;
+    }
+
+.barber-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.barber-name {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+    gap: 8px;
+}
+
+.page-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+}
+
+    .page-btn.active {
+        background-color: #333;
+        color: #fff;
+        border-color: #333;
+    }
+
+.submit-button {
+    display: block;
+    width: calc(100% - 32px);
+    margin: 0 16px 24px;
+    padding: 14px;
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    font-size: 16px;
+}
+
+    .submit-button:hover {
+        background-color: #777;
+    }
+
+    .submit-button.active {
+        background-color: #333;
+    }
+
+@media (max-width: 500px) {
+    .container {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+.radio-input {
+    display: none;
+}
+
+    .radio-input:checked + .barber-card {
+        border-color: #333;
+        background-color: #f9f9f9;
+    }
+
+

@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasiyalarım</title>
+    <link rel="stylesheet" href="~/css/my_reservations_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="back-button">
+                <a asp-controller="Account" asp-action="Logout"><i class="fas fa-chevron-left"></i></a>
+            </div>
+        </div>
+
+        <div class="title-container">
+            <h1 class="title">Rezervasiyalarım</h1>
+            <p class="subtitle">Görmək istədiyin tarixi seç və rezervlərini yoxla</p>
+        </div>
+
+        <div class="date-selector">
+            <div>
+                <div class="date-label">Tarix</div>
+                <div class="date-value">02/05/2025</div>
+            </div>
+            <button class="search-button">Axtar</button>
+        </div>
+
+        <div class="reservations-list">
+            <!-- Reservation 1 -->
+            <div class="reservation-card">
+                <div class="reservation-time">9:30</div>
+                <div class="customer-name">Ayaz Rzayev</div>
+                <div class="customer-phone">+994 11 111 11 11</div>
+            </div>
+
+            <!-- Reservation 2 -->
+            <div class="reservation-card">
+                <div class="reservation-time">13:00</div>
+                <div class="customer-name">Emil Əliyev</div>
+                <div class="customer-phone">+994 11 111 11 11</div>
+            </div>
+
+            <!-- Reservation 3 -->
+            <div class="reservation-card">
+                <div class="reservation-time">16:00</div>
+                <div class="customer-name">Aslan İsmayılov</div>
+                <div class="customer-phone">+994 11 111 11 11</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ConfirmEmailVM
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -6,23 +7,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Reset</title>
+    <title>Şifrəni dəyişdirin</title>
     <link rel="stylesheet" href="~/css/confirm_email_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
     <div class="container">
         <div class="back-button">
-            <a href="/Account/Login"><i class="fas fa-chevron-left"></i></a>
+            <a asp-controller="Account" asp-action="Login"><i class="fas fa-chevron-left"></i></a>
         </div>
         <h1>Şifrəni dəyişdirin</h1>
         <p>Təsdiq kodunu almaq üçün e-poçt ünvanını daxil edin.</p>
-        <form action="/Account/VerifyEmail" method="post" enctype="multipart/form-data">
+
+        <form asp-controller="Account" asp-action="ConfirmEmail" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
-                <label for="email">E-poçt ünvanın</label>
-                <input type="email" id="email" name="email" value="reshad@gmail.com" required>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="email" class="form-control" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
+
             <button type="submit">Davam et</button>
         </form>
     </div>

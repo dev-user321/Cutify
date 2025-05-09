@@ -30,8 +30,7 @@ body {
 .back-button {
     top: 20px;
     left: 20px;
-    margin-bottom:20px;
-    
+    margin-bottom: 20px;
 }
 
     .back-button a {
@@ -46,13 +45,13 @@ body {
         color: #333;
         font-size: 18px;
         text-decoration: none;
-        margin-bottom : 20px;
+        margin-bottom: 20px;
     }
 
         .back-button a:hover {
             background-color: #f8f8f8;
         }
-        
+
 /* Header Styles */
 .register-header {
     margin-bottom: 25px;
@@ -93,6 +92,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* This ensures the image stays within the circular boundary */
 }
 
     .avatar-placeholder i {

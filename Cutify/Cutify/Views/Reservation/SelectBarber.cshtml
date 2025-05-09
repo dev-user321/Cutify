@@ -1,0 +1,86 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bərbərini Seç</title>
+    <link rel="stylesheet" href="~/css/select_barber_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="back-button">
+                <a asp-controller="Home" asp-action="Index"><i class="fas fa-chevron-left"></i></a>
+            </div>
+        </div>
+        <div class="header">
+            <div class="title">Bərbərini seç</div>
+        </div>
+        <div class="description">
+            Sənin üçün uyğun olan bərbəri seç və rahatlıqla növbəti addıma keç.
+        </div>
+
+        <form id="barber-form" action="/select-barber" method="POST">
+            <div class="search-container">
+                <input type="text" name="search" class="search-input" placeholder="Bərbər axtar..." id="search-input">
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <div class="barber-grid" id="barber-grid">
+                <!-- Barber 1 -->
+                <div>
+                    <input type="radio" name="barber" value="1" id="barber-1" class="radio-input">
+                    <label for="barber-1" class="barber-card">
+                        <img src="/api/placeholder/150/150" alt="Murad Əliyev" class="barber-img">
+                        <div class="barber-name">Murad Əliyev</div>
+                    </label>
+                </div>
+
+                <!-- Barber 2 -->
+                <div>
+                    <input type="radio" name="barber" value="2" id="barber-2" class="radio-input">
+                    <label for="barber-2" class="barber-card">
+                        <img src="/api/placeholder/150/150" alt="Rəşad Hüseynov" class="barber-img">
+                        <div class="barber-name">Rəşad Hüseynov</div>
+                    </label>
+                </div>
+
+                <!-- Barber 3 -->
+                <div>
+                    <input type="radio" name="barber" value="3" id="barber-3" class="radio-input">
+                    <label for="barber-3" class="barber-card">
+                        <img src="/api/placeholder/150/150" alt="Tural Məmmədov" class="barber-img">
+                        <div class="barber-name">Tural Məmmədov</div>
+                    </label>
+                </div>
+
+                <!-- Barber 4 -->
+                <div>
+                    <input type="radio" name="barber" value="4" id="barber-4" class="radio-input">
+                    <label for="barber-4" class="barber-card">
+                        <img src="/api/placeholder/150/150" alt="Farid Quliyev" class="barber-img">
+                        <div class="barber-name">Farid Quliyev</div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="?page=1" class="page-btn active">1</a>
+                <a href="?page=2" class="page-btn">2</a>
+                <a href="?page=3" class="page-btn">3</a>
+            </div>
+
+            <input type="hidden" name="page" value="1">
+            <a type="submit" class="submit-button" style="text-decoration:none;" asp-controller="Reservation" asp-action="EnterInfo">Davam et</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,7 +1,29 @@
-﻿// Toggle password visibility
+﻿document.getElementById('Image').addEventListener('change', function (e) {
+    const file = e.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+            const profileImage = document.getElementById('profile-image-preview');
+            const defaultIcon = document.getElementById('default-icon');
+
+            // Display the image
+            profileImage.src = event.target.result;
+            profileImage.style.display = 'block';
+
+            // Hide the default icon
+            defaultIcon.style.display = 'none';
+        }
+
+        reader.readAsDataURL(file);
+    }
+});
+
+
+// Password visibility toggle
 document.querySelector('.password-toggle').addEventListener('click', function () {
     const passwordField = document.getElementById('password');
-    const icon = this.querySelector('i');
+    const icon = document.getElementById('password-toggle-icon');
 
     if (passwordField.type === 'password') {
         passwordField.type = 'text';

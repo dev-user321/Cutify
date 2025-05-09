@@ -1,9 +1,17 @@
 wwwroot\css\confirm_email_page.css
+wwwroot\css\enter_info_page.css
 wwwroot\css\home_page.css
 wwwroot\css\login_page.css
+wwwroot\css\my_reservations_page.css
 wwwroot\css\register_page.css
+wwwroot\css\reset_password_page.css
+wwwroot\css\select_barber_page.css
+wwwroot\css\success_message_page.css
 wwwroot\css\verify_email_page.css
-wwwroot\img\R (1).jpeg
+wwwroot\img\0a74c7ee-0ce0-46fb-9a32-14dfeab5bcc9OIP (3).jpeg
+wwwroot\img\8691d3e1-683b-4dff-85e1-93382834a99d.jpeg
 wwwroot\js\login_page.js
 wwwroot\js\register_page.js
+wwwroot\js\reset_password_page.js
 wwwroot\js\verify_email_page.js
+wwwroot\templates\verify.html
