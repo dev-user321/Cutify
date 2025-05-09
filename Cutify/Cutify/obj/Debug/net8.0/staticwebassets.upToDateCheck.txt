@@ -15,6 +15,7 @@ wwwroot\img\aa29147d-ecca-4b48-8d7f-fa5c56cbaab1.jpeg
 wwwroot\img\ef31ab63-8de8-4500-887b-63b11d2ff92d.jpeg
 wwwroot\img\f58818ee-92dd-4830-9545-d3f4a3021554.jpeg
 wwwroot\img\R (1).jpeg
+wwwroot\js\enter_info_page.js
 wwwroot\js\login_page.js
 wwwroot\js\register_page.js
 wwwroot\js\reset_password_page.js

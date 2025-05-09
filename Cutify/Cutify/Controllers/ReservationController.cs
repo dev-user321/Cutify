@@ -1,8 +1,10 @@
-﻿using Cutify.Data;
+﻿using AutoMapper;
+using Cutify.Data;
 using Cutify.Models;
 using Cutify.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 using System.Threading.Tasks;
 
 namespace Cutify.Controllers
@@ -10,9 +12,12 @@ namespace Cutify.Controllers
     public class ReservationController : Controller
     {
         private readonly AppDbContext _context;
-        public ReservationController(AppDbContext context)
+        private readonly IMapper _mapper;
+        public ReservationController(AppDbContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
+           
         }
         public async Task<IActionResult> SelectBarber(int pageNumber = 1, int pageSize = 4, string search = "")
         {
@@ -53,28 +58,97 @@ namespace Cutify.Controllers
         }
 
 
-        
+
         [HttpGet]
-        public async Task<IActionResult> EnterInfo(int? barberId)
+        public IActionResult EnterInfo(int barberId)
         {
-            if (barberId == null)
+            var barber = _context.Users.FirstOrDefault(b => b.Id == barberId);
+            if (barber == null)
             {
-                return RedirectToAction("SelectBarber");
+                return NotFound(); 
             }
 
-            var user = await _context.Users.FindAsync(barberId);
-            if (user == null)
+            var viewModel = new ReservationVM
             {
-                return NotFound();
-            }
-
-            ReservationVM reservationVM = new ReservationVM
-            {
-                BarberFullName = user.LastName + " " + user.Name
+                BarberId = barberId,
+                BarberFullName = $"{barber.Name} {barber.LastName}", 
             };
 
-            return View(reservationVM);
+            viewModel.FullName = Request.Cookies["FullName"];
+            viewModel.PhoneNumber = Request.Cookies["PhoneNumber"];
+            return View(viewModel); 
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> EnterInfo(ReservationVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                var barber = await _context.Users.FirstOrDefaultAsync(b => b.Id == model.BarberId);
+                if (barber != null)
+                {
+                    model.BarberFullName = $"{barber.Name} {barber.LastName}";
+                }
+
+                return View(model);
+            }
+
+            var reservation = _mapper.Map<Reservation>(model);
+
+            try
+            {
+                _context.Reservations.Add(reservation);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Xəta baş verdi: " + ex.Message);
+                var barber = await _context.Users.FirstOrDefaultAsync(b => b.Id == model.BarberId);
+                if (barber != null)
+                {
+                    model.BarberFullName = $"{barber.Name} {barber.LastName}";
+                }
+                return View(model);
+            }
+
+            var expirationDate = DateTime.Now.AddDays(365);
+            Response.Cookies.Append("FullName", model.FullName, new CookieOptions
+            {
+                Expires = expirationDate,
+                HttpOnly = true,
+                Secure = true 
+            });
+
+            Response.Cookies.Append("PhoneNumber", model.PhoneNumber, new CookieOptions
+            {
+                Expires = expirationDate,
+                HttpOnly = true,
+                Secure = true 
+            });
+
+            return RedirectToAction("Index", "Home"); 
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetOccupiedTimes(int barberId, string date)
+        {
+            if (DateTime.TryParse(date, out DateTime parsedDate))
+            {
+                var occupiedTimes = await _context.Reservations
+                    .Where(r => r.BarberId == barberId && r.ReservationTime.Date == parsedDate.Date)
+                    .Select(r => r.Time)
+                    .ToListAsync();
+
+                return Json(occupiedTimes);
+            }
+
+            return BadRequest("Düzgün tarix formatı daxil edin.");
+        }
+
+
+
+
 
         [HttpGet]
         public IActionResult SuccessMessage()

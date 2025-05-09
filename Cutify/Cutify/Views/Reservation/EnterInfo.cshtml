@@ -1,16 +1,16 @@
-﻿@model ReservationVM 
+﻿@model ReservationVM
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
 <html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Məlumatlarını daxil et</title>
-    <link rel="stylesheet" href="~/css/enter_info_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css">
+    <link rel="stylesheet" href="~/css/enter_info_page.css" />
 </head>
 <body>
     <div class="container">
@@ -19,6 +19,7 @@
                 <a asp-controller="Reservation" asp-action="SelectBarber"><i class="fas fa-chevron-left"></i></a>
             </div>
         </div>
+
         <div class="header">
             <div class="title">Bərbərini seç</div>
         </div>
@@ -33,40 +34,118 @@
         </div>
 
         <div class="form-container">
-            <form id="user-info-form" action="/submit-reservation" method="POST">
+            <form asp-controller="Reservation" asp-action="EnterInfo" method="post">
+                <div asp-validation-summary="All"></div>
+                <input type="hidden" asp-for="BarberId" />
+
                 <div class="form-group">
-                    <label for="barber-name" class="form-label">Bərbərin adı və soyadı</label>
-                    <input type="text" id="barber-name" name="barber-name" class="form-input" value="@Model.BarberFullName" readonly>
+                    <label class="form-label">Bərbərin adı və soyadı</label>
+                    <input type="text" class="form-input" value="@Model.BarberFullName" asp-for="BarberFullName" />
                 </div>
 
                 <div class="form-row">
                     <div class="form-col">
                         <div class="form-group">
-                            <label for="date" class="form-label">Tarix</label>
-                            <input type="text" id="date" name="date" class="form-input" value="02/05/2025">
+                            <label class="form-label">Tarix</label>
+                            <input type="text" class="form-input" asp-for="ReservationTime" id="date-picker" placeholder="Tarix seç" />
+                            <span asp-validation-for="ReservationTime" class="validation-message"></span>
                         </div>
                     </div>
                     <div class="form-col">
                         <div class="form-group">
-                            <label for="time" class="form-label">Saat</label>
-                            <input type="text" id="time" name="time" class="form-input" value="10:30">
+                            <label class="form-label">Saat</label>
+                            <select class="form-input" asp-for="Time" id="time-picker">
+                                <option value="">Saat seçin</option>
+                            </select>
+                            <span asp-validation-for="Time" class="validation-message"></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="full-name" class="form-label">Ad və soyadın</label>
-                    <input type="text" id="full-name" name="full-name" class="form-input" placeholder="Adınızı və soyadınızı daxil edin">
+                    <label class="form-label">Ad və soyadın</label>
+                    <input type="text" class="form-input" asp-for="FullName" placeholder="Adınızı və soyadınızı daxil edin" />
+                    <span asp-validation-for="FullName" class="validation-message"></span>
                 </div>
 
                 <div class="form-group">
-                    <label for="phone" class="form-label">Mobil nömrən</label>
-                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+994 XX XXX XX XX">
+                    <label class="form-label">Mobil nömrən</label>
+                    <input type="tel" class="form-input" asp-for="PhoneNumber" placeholder="+994 XX XXX XX XX" />
+                    <span asp-validation-for="PhoneNumber" class="validation-message"></span>
                 </div>
 
-                <a type="submit" class="submit-button" style="text-decoration:none;" asp-controller="Reservation" asp-action="SuccessMessage">Tamamla</a>
+                <button type="submit" class="submit-button">Tamamla</button>
             </form>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
+    <script >
+        // Dolu saatları yeniləyir
+        function updateOccupiedTimes() {
+            const barberId = @Model.BarberId;
+            const selectedDate = document.getElementById("date-picker").value;
+
+            if (!selectedDate) {
+                fillAvailableTimes([]); // Tarix seçilməyibsə, bütün saatları göstər
+                return;
+            }
+
+            fetch(`/Reservation/GetOccupiedTimes?barberId=${barberId}&date=${selectedDate}`, {
+                method: 'GET'
+            })
+                .then(response => response.json())
+                .then(occupiedTimes => {
+                    fillAvailableTimes(occupiedTimes);
+                })
+                .catch(error => {
+                    console.error("Xəta baş verdi:", error);
+                    fillAvailableTimes([]); // Xəta olarsa bütün saatları göstər
+                });
+        }
+
+        // Mövcud saatları doldurur (dolu saatlar çıxarılır)
+        function fillAvailableTimes(occupiedTimes) {
+            const allTimes = [
+                "09:00", "09:30", "10:00", "10:30", "11:00", "11:30",
+                "12:00", "12:30", "13:00", "13:30", "14:00", "14:30",
+                "15:00", "15:30", "16:00", "16:30", "17:00", "17:30"
+            ];
+
+            // Mövcud saatları filtr edirik
+            const availableTimes = allTimes.filter(time => !occupiedTimes.includes(time));
+
+            const timeSelect = document.getElementById("time-picker");
+            timeSelect.innerHTML = "<option value=''>Saat seçin</option>"; // Başlıq
+
+            // Yalnız mövcud saatları əlavə edirik
+            availableTimes.forEach(time => {
+                const option = document.createElement("option");
+                option.value = time;
+                option.textContent = time;
+                timeSelect.appendChild(option);
+            });
+
+            // Əgər heç bir mövcud saat yoxdursa
+            if (availableTimes.length === 0) {
+                const option = document.createElement("option");
+                option.disabled = true;
+                option.textContent = "Mövcud saat yoxdur";
+                timeSelect.appendChild(option);
+            }
+        }
+
+        // Səhifə yükləndikdə və tarix seçildikdə saatları yeniləyirik
+        document.addEventListener("DOMContentLoaded", function () {
+            flatpickr("#date-picker", {
+                dateFormat: "Y-m-d",
+                minDate: "today", // Bu günün tarixindən əvvəl tarix seçilməsi mümkün deyil
+                disableMobile: true,
+                onChange: updateOccupiedTimes // Tarix dəyişildikdə mövcud saatları yenilə
+            });
+
+            updateOccupiedTimes(); // İlk açılışda saatları yüklə
+        });
+    </script>
 </body>
 </html>

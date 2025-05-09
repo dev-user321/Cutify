@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\img\\f58818ee-92dd-4830-9545-d3f4a3021554.jpeg"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\enter_info_page.js",
+      "PackagePath": "staticwebassets\\js\\enter_info_page.js"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\login_page.js",
       "PackagePath": "staticwebassets\\js\\login_page.js"
     },

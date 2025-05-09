@@ -2,6 +2,10 @@
 using Cutify.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using Cutify.Data;
+using Cutify.Models;
+using System.Threading.Tasks;
 
 namespace Cutify.Controllers
 {
@@ -9,9 +13,11 @@ namespace Cutify.Controllers
     public class AccountController : Controller
     {
         private readonly IAccountService _accountService;
+        private readonly AppDbContext _context;
 
-        public AccountController(IAccountService accountService)
+        public AccountController(IAccountService accountService,AppDbContext context)
         {
+            _context = context;
             _accountService = accountService;
         }
 
@@ -127,7 +133,28 @@ namespace Cutify.Controllers
         }
 
         [HttpGet]
-        [Authorize]
-        public IActionResult MyReservations() => View();
+        
+        public async Task<IActionResult> MyReservations(DateTime? date)
+        {
+            var email = User.Identity.Name;
+
+            if (string.IsNullOrEmpty(email))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email); 
+            // Default to current date if no date is provided
+            var selectedDate = date?.Date ?? DateTime.Today;
+
+            // Filter reservations by BarberId and selected date
+            IEnumerable<Reservation> reservations = _context.Reservations
+                .Where(r => r.BarberId.ToString() == user.Id.ToString() && r.ReservationTime.Date == selectedDate)
+                .ToList();
+
+            // Pass the selected date to the view for display
+            ViewBag.SelectedDate = selectedDate;
+
+            return View(reservations);
+        }
     }
 }

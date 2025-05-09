@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<Reservation>
 @{
     Layout = null;
 }
@@ -26,6 +26,7 @@
         </div>
 
         <div class="date-selector">
+            
             <div>
                 <div class="date-label">Tarix</div>
                 <div class="date-value">02/05/2025</div>
@@ -34,26 +35,15 @@
         </div>
 
         <div class="reservations-list">
-            <!-- Reservation 1 -->
-            <div class="reservation-card">
-                <div class="reservation-time">9:30</div>
-                <div class="customer-name">Ayaz Rzayev</div>
-                <div class="customer-phone">+994 11 111 11 11</div>
-            </div>
-
-            <!-- Reservation 2 -->
-            <div class="reservation-card">
-                <div class="reservation-time">13:00</div>
-                <div class="customer-name">Emil Əliyev</div>
-                <div class="customer-phone">+994 11 111 11 11</div>
-            </div>
-
-            <!-- Reservation 3 -->
-            <div class="reservation-card">
-                <div class="reservation-time">16:00</div>
-                <div class="customer-name">Aslan İsmayılov</div>
-                <div class="customer-phone">+994 11 111 11 11</div>
-            </div>
+            @foreach(var reservation in Model)
+            {
+                <div class="reservation-card">
+                    <div class="reservation-time">@reservation.Time</div>
+                    <div class="customer-name">@reservation.FullName</div>
+                    <div class="customer-phone">@reservation.PhoneNumber</div>
+                </div>
+            }
+           
         </div>
     </div>
 </body>

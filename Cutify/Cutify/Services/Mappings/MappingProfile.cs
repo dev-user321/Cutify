@@ -10,6 +10,7 @@ namespace Cutify.Services.Mappings
         public MappingProfile()
         {
             CreateMap<RegisterVM, AppUser>();
+            CreateMap<ReservationVM,Reservation>();
         }
     }
 }
