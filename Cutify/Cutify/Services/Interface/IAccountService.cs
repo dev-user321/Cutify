@@ -1,4 +1,5 @@
-﻿using Cutify.ViewModels;
+﻿using Cutify.Models;
+using Cutify.ViewModels;
 
 namespace Cutify.Services.Interface
 {
@@ -11,6 +12,8 @@ namespace Cutify.Services.Interface
         Task<(bool Succeeded, string ErrorMessage)> ResetPasswordAsync(ResetPasswordVM resetPasswordVM, HttpContext httpContext);
         Task ResendVerificationCodeAsync(HttpContext httpContext);
         Task LogoutAsync(HttpContext httpContext);
+        Task<IEnumerable<Reservation>> GetMyReservationsAsync(string userId, DateTime selectedDate);
+
     }
 
 }

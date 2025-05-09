@@ -172,6 +172,13 @@ namespace Cutify.Services
             httpContext.Session.Remove("email_to_verify");
             httpContext.Session.Remove("method");
         }
+        public async Task<IEnumerable<Reservation>> GetMyReservationsAsync(string userId, DateTime selectedDate)
+        {
+            return await _context.Reservations
+                .Where(r => r.BarberId.ToString() == userId && r.ReservationTime.Date == selectedDate)
+                .ToListAsync();
+        }
+
     }
 
 }

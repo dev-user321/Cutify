@@ -133,28 +133,24 @@ namespace Cutify.Controllers
         }
 
         [HttpGet]
-        
+        [Authorize]
         public async Task<IActionResult> MyReservations(DateTime? date)
         {
-            var email = User.Identity.Name;
+            var userId = User.FindFirst("UserId")?.Value;
 
-            if (string.IsNullOrEmpty(email))
-            {
+            if (string.IsNullOrEmpty(userId))
                 return RedirectToAction("Login", "Account");
-            }
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == email); 
-            // Default to current date if no date is provided
+
             var selectedDate = date?.Date ?? DateTime.Today;
 
-            // Filter reservations by BarberId and selected date
-            IEnumerable<Reservation> reservations = _context.Reservations
-                .Where(r => r.BarberId.ToString() == user.Id.ToString() && r.ReservationTime.Date == selectedDate)
-                .ToList();
+            var reservations = await _context.Reservations
+                .Where(r => r.BarberId.ToString() == userId && r.ReservationTime.Date == selectedDate)
+                .ToListAsync();
 
-            // Pass the selected date to the view for display
             ViewBag.SelectedDate = selectedDate;
 
             return View(reservations);
         }
+
     }
 }

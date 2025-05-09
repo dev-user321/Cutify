@@ -1,4 +1,6 @@
 using Cutify.Data;
+using Cutify.Repositories.Repository;
+using Cutify.Repositories;
 using Cutify.Services;
 using Cutify.Services.Interface;
 using Cutify.Services.Mappings;
@@ -21,6 +23,10 @@ namespace Cutify
             builder.Services.AddScoped<IFileService, FileService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<IAccountService, AccountService>();
+            builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
+            builder.Services.AddScoped<IErrorLogRepository, ErrorLogRepository>();
             builder.Services.AddAutoMapper(typeof(MappingProfile));
             builder.Services.AddAuthentication(options =>
             {
