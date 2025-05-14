@@ -40,7 +40,7 @@
 
                 <div class="form-group">
                     <label class="form-label">Bərbərin adı və soyadı</label>
-                    <input type="text" class="form-input" value="@Model.BarberFullName" asp-for="BarberFullName" />
+                    <input type="text" class="form-input" value="@Model.BarberFullName" asp-for="BarberFullName" readonly/>
                 </div>
 
                 <div class="form-row">
@@ -146,6 +146,19 @@
 
             updateOccupiedTimes(); // İlk açılışda saatları yüklə
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            flatpickr("#date-picker", {
+                dateFormat: "Y-m-d",
+                minDate: "today", // Keçmiş tarixlərə icazə verilmir
+                defaultDate: "today", // Cari gün göstərilir
+                disableMobile: true,
+                onChange: updateOccupiedTimes // Tarix dəyişildikdə mövcud saatları yenilə
+            });
+
+            updateOccupiedTimes(); // İlk açılışda saatları yüklə
+        });
+
     </script>
 </body>
 </html>

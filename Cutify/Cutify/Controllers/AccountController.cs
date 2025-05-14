@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using Cutify.Data;
 using Cutify.Models;
 using System.Threading.Tasks;
+using Cutify.Repositories.Repository;
+using Cutify.Repositories;
 
 namespace Cutify.Controllers
 {
@@ -14,11 +16,12 @@ namespace Cutify.Controllers
     {
         private readonly IAccountService _accountService;
         private readonly AppDbContext _context;
-
-        public AccountController(IAccountService accountService,AppDbContext context)
+        private readonly IErrorLogRepository _errorLogRepository;
+        public AccountController(IAccountService accountService,AppDbContext context,IErrorLogRepository errorLogRepository)
         {
             _context = context;
             _accountService = accountService;
+            _errorLogRepository = errorLogRepository;
         }
 
         [HttpGet]
@@ -27,18 +30,26 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM loginVM)
         {
-            if (!ModelState.IsValid)
-                return View(loginVM);
-
-            var result = await _accountService.LoginAsync(loginVM, HttpContext);
-
-            if (!result.Succeeded)
+            try
             {
-                ModelState.AddModelError(string.Empty, result.ErrorMessage);
-                return View(loginVM);
-            }
+                if (!ModelState.IsValid)
+                    return View(loginVM);
 
-            return RedirectToAction("MyReservations");
+                var result = await _accountService.LoginAsync(loginVM, HttpContext);
+
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError(string.Empty, result.ErrorMessage);
+                    return View(loginVM);
+                }
+
+                return RedirectToAction("MyReservations");
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
+            }
         }
 
         [HttpGet]
@@ -47,18 +58,26 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterVM registerVM)
         {
-            if (!ModelState.IsValid)
-                return View(registerVM);
-
-            var result = await _accountService.RegisterAsync(registerVM, HttpContext);
-
-            if (!result.Succeeded)
+            try
             {
-                ModelState.AddModelError(string.Empty, result.ErrorMessage);
-                return View(registerVM);
-            }
+                if (!ModelState.IsValid)
+                    return View(registerVM);
 
-            return RedirectToAction("VerifyEmail");
+                var result = await _accountService.RegisterAsync(registerVM, HttpContext);
+
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError(string.Empty, result.ErrorMessage);
+                    return View(registerVM);
+                }
+
+                return RedirectToAction("VerifyEmail");
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
+            }
         }
 
         [HttpGet]
@@ -67,15 +86,23 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> VerifyEmail(string code1, string code2, string code3, string code4)
         {
-            var result = await _accountService.VerifyEmailAsync(new[] { code1, code2, code3, code4 }, HttpContext);
-
-            if (!result.Succeeded)
+            try
             {
-                ModelState.AddModelError("", "Daxil edilən kod yanlışdır və ya vaxtı bitmişdir.");
-                return View();
-            }
+                var result = await _accountService.VerifyEmailAsync(new[] { code1, code2, code3, code4 }, HttpContext);
 
-            return RedirectToAction(result.RedirectAction);
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError("", "Daxil edilən kod yanlışdır və ya vaxtı bitmişdir.");
+                    return View();
+                }
+
+                return RedirectToAction(result.RedirectAction);
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
+            }
         }
 
         [HttpGet]
@@ -84,18 +111,27 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> ConfirmEmail(ConfirmEmailVM confirmEmailVM)
         {
-            if (!ModelState.IsValid)
-                return View(confirmEmailVM);
-
-            var result = await _accountService.ConfirmEmailAsync(confirmEmailVM, HttpContext);
-
-            if (!result.Succeeded)
+            try
             {
-                ModelState.AddModelError("Email", result.ErrorMessage);
-                return View(confirmEmailVM);
+                if (!ModelState.IsValid)
+                    return View(confirmEmailVM);
+
+                var result = await _accountService.ConfirmEmailAsync(confirmEmailVM, HttpContext);
+
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError("Email", result.ErrorMessage);
+                    return View(confirmEmailVM);
+                }
+
+                return RedirectToAction("VerifyEmail");
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
             }
 
-            return RedirectToAction("VerifyEmail");
         }
 
         [HttpGet]
@@ -104,52 +140,85 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPasswordVM)
         {
-            if (!ModelState.IsValid)
-                return View(resetPasswordVM);
-
-            var result = await _accountService.ResetPasswordAsync(resetPasswordVM, HttpContext);
-
-            if (!result.Succeeded)
+            try
             {
-                ModelState.AddModelError("", result.ErrorMessage);
-                return View(resetPasswordVM);
-            }
+                if (!ModelState.IsValid)
+                    return View(resetPasswordVM);
 
-            return RedirectToAction("Login");
+                var result = await _accountService.ResetPasswordAsync(resetPasswordVM, HttpContext);
+
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError("", result.ErrorMessage);
+                    return View(resetPasswordVM);
+                }
+
+                return RedirectToAction("Login");
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
+            }
         }
 
         [HttpGet]
         public async Task<IActionResult> SendAgain()
         {
-            await _accountService.ResendVerificationCodeAsync(HttpContext);
-            return RedirectToAction("VerifyEmail");
+            try
+            {
+                await _accountService.ResendVerificationCodeAsync(HttpContext);
+                return RedirectToAction("VerifyEmail");
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
+            }
+
         }
 
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
-            await _accountService.LogoutAsync(HttpContext);
-            return RedirectToAction("Login", "Account");
+            try
+            {
+                await _accountService.LogoutAsync(HttpContext);
+                return RedirectToAction("Login", "Account");
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
+            }
         }
 
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> MyReservations(DateTime? date)
         {
-            var userId = User.FindFirst("UserId")?.Value;
+            try
+            {
+                var userId = User.FindFirst("UserId")?.Value;
 
-            if (string.IsNullOrEmpty(userId))
-                return RedirectToAction("Login", "Account");
+                if (string.IsNullOrEmpty(userId))
+                    return RedirectToAction("Login", "Account");
 
-            var selectedDate = date?.Date ?? DateTime.Today;
+                var selectedDate = date?.Date ?? DateTime.Today;
 
-            var reservations = await _context.Reservations
-                .Where(r => r.BarberId.ToString() == userId && r.ReservationTime.Date == selectedDate)
-                .ToListAsync();
+                var reservations = await _context.Reservations
+                    .Where(r => r.BarberId.ToString() == userId && r.ReservationTime.Date == selectedDate)
+                    .ToListAsync();
 
-            ViewBag.SelectedDate = selectedDate;
+                ViewBag.SelectedDate = selectedDate;
 
-            return View(reservations);
+                return View(reservations);
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "Search");
+                return StatusCode(500, "An error occurred while searching for barbers.");
+            }
         }
 
     }
