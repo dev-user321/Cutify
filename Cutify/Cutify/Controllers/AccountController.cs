@@ -71,14 +71,15 @@ namespace Cutify.Controllers
                     return View(registerVM);
                 }
 
-                return RedirectToAction("VerifyEmail");
+                return RedirectToAction("Login", "Account");
             }
             catch (Exception ex)
             {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                await _errorLogRepository.LogErrorAsync(ex, "Register");
+                return StatusCode(500, "Gözlənilməz xəta baş verdi.");
             }
         }
+
 
         [HttpGet]
         public IActionResult VerifyEmail() => View();

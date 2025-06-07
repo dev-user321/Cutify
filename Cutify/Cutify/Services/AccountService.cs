@@ -31,7 +31,7 @@ namespace Cutify.Services
         public async Task<(bool Succeeded, string ErrorMessage)> LoginAsync(LoginVM loginVM, HttpContext httpContext)
         {
             var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Email == loginVM.Email && u.EmailConfirmed == true);
+                .FirstOrDefaultAsync(u => u.Email == loginVM.Email );
 
             if (user == null || !PasswordHash.VerifyHashedPassword(user.Password, loginVM.Password))
             {
@@ -74,17 +74,10 @@ namespace Cutify.Services
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
 
-            var code = new Random().Next(1000, 9999).ToString();
-            httpContext.Session.SetString("email_verification_code", code);
-            httpContext.Session.SetString("email_to_verify", registerVM.Email);
-            httpContext.Session.SetString("method", "register");
-
-            var body = await _fileService.ReadFileAsync("wwwroot/templates/verify.html");
-            body = body.Replace("{{code}}", code);
-            _emailService.Send(registerVM.Email, "Email Verification Code", body);
 
             return (true, null);
         }
+
 
         public async Task<(bool Succeeded, string RedirectAction)> VerifyEmailAsync(string[] codes, HttpContext httpContext)
         {
@@ -102,7 +95,6 @@ namespace Cutify.Services
 
             if (method == "register" && user != null)
             {
-                user.EmailConfirmed = true;
                 await _context.SaveChangesAsync();
                 ClearVerificationSession(httpContext);
                 return (true, "Login");

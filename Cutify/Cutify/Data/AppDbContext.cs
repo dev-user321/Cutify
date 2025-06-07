@@ -9,5 +9,6 @@ namespace Cutify.Data
         public DbSet<AppUser> Users { get; set; }   
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<ErrorLog> ErrorLogs { get; set; }
+        public DbSet<WorkHour> WorkHours { get; set; }
     }
 }

@@ -17,6 +17,13 @@ namespace Cutify.Repositories
                 .ToListAsync();
         }
 
+        public async Task<List<string>> GetReservedTimesAsync(int barberId, DateTime date)
+        {
+            return await GetQueryable()
+                .Where(r => r.BarberId == barberId && r.ReservationTime.Date == date.Date)
+                .Select(r => r.Time) // string kimi saatı qaytarır
+                .ToListAsync();
+        }
         public async Task AddReservationAsync(Reservation reservation)
         {
             await AddAsync(reservation);

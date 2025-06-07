@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Cutify.Data;
 using Cutify.Models;
+using Cutify.Repositories;
 using Cutify.Repositories.Repository;
 using Cutify.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,7 @@ namespace Cutify.Controllers
         private readonly IUserRepository _userRepository;
         private readonly IReservationRepository _reservationRepository;
         private readonly IErrorLogRepository _errorLogRepository;
+        private readonly IWorkHourRepository _workHourRepository;
         private readonly IMapper _mapper;
         private readonly AppDbContext _context;
 
@@ -68,22 +70,30 @@ namespace Cutify.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> EnterInfo(int barberId)
+        public async Task<IActionResult> EnterInfo(int barberId, DateTime? date)
         {
             try
             {
                 var barber = await _userRepository.GetByIdAsync(barberId);
-                if (barber == null)
-                {
-                    return NotFound();
-                }
+                if (barber == null) return NotFound();
+
+                var allHours = await _workHourRepository.GetAllAsync();
+                var reservedTimes = await _reservationRepository
+                    .GetReservedTimesAsync(barberId, date ?? DateTime.Today);
+
+                var availableTimes = allHours
+                    .Select(h => h.Time.ToString(@"hh\:mm"))
+                    .Where(t => !reservedTimes.Contains(t))
+                    .ToList();
 
                 var viewModel = new ReservationVM
                 {
                     BarberId = barberId,
                     BarberFullName = $"{barber.Name} {barber.LastName}",
                     FullName = Request.Cookies["FullName"],
-                    PhoneNumber = Request.Cookies["PhoneNumber"]
+                    PhoneNumber = Request.Cookies["PhoneNumber"],
+                    AllWorkHours = availableTimes,
+                    ReservationTime = date ?? DateTime.Today
                 };
 
                 return View(viewModel);
@@ -91,57 +101,64 @@ namespace Cutify.Controllers
             catch (Exception ex)
             {
                 await _errorLogRepository.LogErrorAsync(ex, "EnterInfo_Get");
-                return StatusCode(500, "An error occurred while loading the reservation form.");
+                return StatusCode(500, "Xəta baş verdi.");
             }
         }
+
+
 
         [HttpPost]
         public async Task<IActionResult> EnterInfo(ReservationVM model)
         {
             try
             {
+                var barber = await _userRepository.GetByIdAsync(model.BarberId);
                 if (!ModelState.IsValid)
                 {
-                    var barber = await _userRepository.GetByIdAsync(model.BarberId);
                     if (barber != null)
-                    {
                         model.BarberFullName = $"{barber.Name} {barber.LastName}";
-                    }
+
                     return View(model);
                 }
 
                 var reservation = _mapper.Map<Reservation>(model);
                 await _reservationRepository.AddReservationAsync(reservation);
 
-                var expirationDate = DateTime.Now.AddDays(365);
-                Response.Cookies.Append("FullName", model.FullName, new CookieOptions
-                {
-                    Expires = expirationDate,
-                    HttpOnly = true,
-                    Secure = true
-                });
+                WriteReservationCookies(model, barber);
 
-                Response.Cookies.Append("PhoneNumber", model.PhoneNumber, new CookieOptions
-                {
-                    Expires = expirationDate,
-                    HttpOnly = true,
-                    Secure = true
-                });
-
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("SuccessMessage");
             }
             catch (Exception ex)
             {
                 await _errorLogRepository.LogErrorAsync(ex, "EnterInfo_Post");
                 ModelState.AddModelError("", "Xəta baş verdi: " + ex.Message);
+
                 var barber = await _userRepository.GetByIdAsync(model.BarberId);
                 if (barber != null)
-                {
                     model.BarberFullName = $"{barber.Name} {barber.LastName}";
-                }
+
                 return View(model);
             }
         }
+
+        private void WriteReservationCookies(ReservationVM model, AppUser barber)
+        {
+            var expiration = DateTime.Now.AddDays(365);
+            var options = new CookieOptions
+            {
+                Expires = expiration,
+                HttpOnly = true,
+                Secure = true
+            };
+
+            Response.Cookies.Append("FullName", model.FullName, options);
+            Response.Cookies.Append("PhoneNumber", model.PhoneNumber, options);
+            Response.Cookies.Append("BarberInfo", model.BarberFullName, options);
+            Response.Cookies.Append("BarberPhoneNumber", barber.PhoneNumber, options);
+            Response.Cookies.Append("Time", model.ReservationTime.ToString(), options);
+            Response.Cookies.Append("Location", barber.Address ?? "Yoxdur", options);
+        }
+
 
         [HttpGet]
         public async Task<IActionResult> GetOccupiedTimes(int barberId, string date)
@@ -166,6 +183,13 @@ namespace Cutify.Controllers
         [HttpGet]
         public IActionResult SuccessMessage()
         {
+           
+            ViewBag.FullName = Request.Cookies["FullName"];
+            ViewBag.PhoneNumber = Request.Cookies["BarberPhoneNumber"];
+            ViewBag.BarberInfo = Request.Cookies["BarberInfo"];
+            ViewBag.Time = Request.Cookies["Time"];
+            ViewBag.Address = Request.Cookies["Location"];
+
             return View();
         }
         [HttpPost]
