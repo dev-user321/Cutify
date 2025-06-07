@@ -7,7 +7,6 @@ using Cutify.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
-using System.Threading.Tasks;
 
 namespace Cutify.Controllers
 {
@@ -51,6 +50,25 @@ namespace Cutify.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAvailableTimes(int barberId, DateTime selectedDate)
+        {
+            try
+            {
+                var reservations = await _reservationRepository.GetReservationsByBarberAndDateAsync(barberId, selectedDate.Date);
+                var availableSlots = GetAvailableSlots(reservations, selectedDate)
+                    .Select(t => t.ToString(@"hh\:mm"))
+                    .ToList();
+
+                return Json(availableSlots);
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "GetAvailableTimes");
+                return StatusCode(500, "Failed to retrieve available times.");
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Search(string search)
         {
@@ -70,20 +88,21 @@ namespace Cutify.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> EnterInfo(int barberId, DateTime? date)
+        public async Task<IActionResult> EnterInfo(int barberId)
         {
             try
             {
                 var barber = await _userRepository.GetByIdAsync(barberId);
                 if (barber == null) return NotFound();
 
-                var allHours = await _workHourRepository.GetAllAsync();
-                var reservedTimes = await _reservationRepository
-                    .GetReservedTimesAsync(barberId, date ?? DateTime.Today);
+                var selectedDate = DateTime.Today;
 
-                var availableTimes = allHours
-                    .Select(h => h.Time.ToString(@"hh\:mm"))
-                    .Where(t => !reservedTimes.Contains(t))
+                var allReservations = await _context.Reservations
+                    .Where(r => r.BarberId == barberId && r.ReservationTime == selectedDate)
+                    .ToListAsync();
+
+                var availableSlots = GetAvailableSlots(allReservations, selectedDate)
+                    .Select(t => t.ToString(@"hh\:mm"))
                     .ToList();
 
                 var viewModel = new ReservationVM
@@ -92,8 +111,8 @@ namespace Cutify.Controllers
                     BarberFullName = $"{barber.Name} {barber.LastName}",
                     FullName = Request.Cookies["FullName"],
                     PhoneNumber = Request.Cookies["PhoneNumber"],
-                    AllWorkHours = availableTimes,
-                    ReservationTime = date ?? DateTime.Today
+                    AllWorkHours = availableSlots,
+                    ReservationTime = selectedDate
                 };
 
                 return View(viewModel);
@@ -105,7 +124,25 @@ namespace Cutify.Controllers
             }
         }
 
+        public static List<TimeSpan> GetAvailableSlots(List<Reservation> allReservations, DateTime selectedDate)
+        {
+            TimeSpan startTime = new TimeSpan(9, 0, 0);
+            TimeSpan endTime = new TimeSpan(18, 0, 0);
+            List<TimeSpan> availableSlots = new();
 
+            var reservedSlots = allReservations
+                .Where(r => r.ReservationTime.Date == selectedDate.Date)
+                .Select(r => TimeSpan.Parse(r.Time))
+                .ToHashSet();
+
+            for (var time = startTime; time < endTime; time = time.Add(TimeSpan.FromHours(1)))
+            {
+                if (!reservedSlots.Contains(time))
+                    availableSlots.Add(time);
+            }
+
+            return availableSlots;
+        }
 
         [HttpPost]
         public async Task<IActionResult> EnterInfo(ReservationVM model)
@@ -117,7 +154,6 @@ namespace Cutify.Controllers
                 {
                     if (barber != null)
                         model.BarberFullName = $"{barber.Name} {barber.LastName}";
-
                     return View(model);
                 }
 
@@ -125,7 +161,6 @@ namespace Cutify.Controllers
                 await _reservationRepository.AddReservationAsync(reservation);
 
                 WriteReservationCookies(model, barber);
-
                 return RedirectToAction("SuccessMessage");
             }
             catch (Exception ex)
@@ -155,10 +190,10 @@ namespace Cutify.Controllers
             Response.Cookies.Append("PhoneNumber", model.PhoneNumber, options);
             Response.Cookies.Append("BarberInfo", model.BarberFullName, options);
             Response.Cookies.Append("BarberPhoneNumber", barber.PhoneNumber, options);
-            Response.Cookies.Append("Time", model.ReservationTime.ToString(), options);
+            Response.Cookies.Append("Time", model.ReservationTime.ToString("yyyy-MM-dd"), options);
             Response.Cookies.Append("Location", barber.Address ?? "Yoxdur", options);
+            Response.Cookies.Append("Duration", model.Time);
         }
-
 
         [HttpGet]
         public async Task<IActionResult> GetOccupiedTimes(int barberId, string date)
@@ -183,20 +218,19 @@ namespace Cutify.Controllers
         [HttpGet]
         public IActionResult SuccessMessage()
         {
-           
             ViewBag.FullName = Request.Cookies["FullName"];
             ViewBag.PhoneNumber = Request.Cookies["BarberPhoneNumber"];
             ViewBag.BarberInfo = Request.Cookies["BarberInfo"];
             ViewBag.Time = Request.Cookies["Time"];
             ViewBag.Address = Request.Cookies["Location"];
-
+            ViewBag.Duration = Request.Cookies["Duration"];
             return View();
         }
+
         [HttpPost]
         public IActionResult ReservationList(DateTime selectedDate)
         {
             return RedirectToAction("MyReservations", "Account", new { date = selectedDate });
         }
-
     }
 }

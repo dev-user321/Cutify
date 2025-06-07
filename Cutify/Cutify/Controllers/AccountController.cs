@@ -6,21 +6,21 @@ using Microsoft.EntityFrameworkCore;
 using Cutify.Data;
 using Cutify.Models;
 using System.Threading.Tasks;
-using Cutify.Repositories.Repository;
 using Cutify.Repositories;
+using Cutify.Repositories.Repository;
 
 namespace Cutify.Controllers
 {
-
     public class AccountController : Controller
     {
         private readonly IAccountService _accountService;
         private readonly AppDbContext _context;
         private readonly IErrorLogRepository _errorLogRepository;
-        public AccountController(IAccountService accountService,AppDbContext context,IErrorLogRepository errorLogRepository)
+
+        public AccountController(IAccountService accountService, AppDbContext context, IErrorLogRepository errorLogRepository)
         {
-            _context = context;
             _accountService = accountService;
+            _context = context;
             _errorLogRepository = errorLogRepository;
         }
 
@@ -30,11 +30,11 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM loginVM)
         {
+            if (!ModelState.IsValid)
+                return View(loginVM);
+
             try
             {
-                if (!ModelState.IsValid)
-                    return View(loginVM);
-
                 var result = await _accountService.LoginAsync(loginVM, HttpContext);
 
                 if (!result.Succeeded)
@@ -47,8 +47,8 @@ namespace Cutify.Controllers
             }
             catch (Exception ex)
             {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                await _errorLogRepository.LogErrorAsync(ex, "Login");
+                return StatusCode(500, "Giriş zamanı xəta baş verdi.");
             }
         }
 
@@ -58,11 +58,11 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterVM registerVM)
         {
+            if (!ModelState.IsValid)
+                return View(registerVM);
+
             try
             {
-                if (!ModelState.IsValid)
-                    return View(registerVM);
-
                 var result = await _accountService.RegisterAsync(registerVM, HttpContext);
 
                 if (!result.Succeeded)
@@ -71,38 +71,12 @@ namespace Cutify.Controllers
                     return View(registerVM);
                 }
 
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login");
             }
             catch (Exception ex)
             {
                 await _errorLogRepository.LogErrorAsync(ex, "Register");
-                return StatusCode(500, "Gözlənilməz xəta baş verdi.");
-            }
-        }
-
-
-        [HttpGet]
-        public IActionResult VerifyEmail() => View();
-
-        [HttpPost]
-        public async Task<IActionResult> VerifyEmail(string code1, string code2, string code3, string code4)
-        {
-            try
-            {
-                var result = await _accountService.VerifyEmailAsync(new[] { code1, code2, code3, code4 }, HttpContext);
-
-                if (!result.Succeeded)
-                {
-                    ModelState.AddModelError("", "Daxil edilən kod yanlışdır və ya vaxtı bitmişdir.");
-                    return View();
-                }
-
-                return RedirectToAction(result.RedirectAction);
-            }
-            catch (Exception ex)
-            {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                return StatusCode(500, "Qeydiyyat zamanı xəta baş verdi.");
             }
         }
 
@@ -112,11 +86,11 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> ConfirmEmail(ConfirmEmailVM confirmEmailVM)
         {
+            if (!ModelState.IsValid)
+                return View(confirmEmailVM);
+
             try
             {
-                if (!ModelState.IsValid)
-                    return View(confirmEmailVM);
-
                 var result = await _accountService.ConfirmEmailAsync(confirmEmailVM, HttpContext);
 
                 if (!result.Succeeded)
@@ -129,10 +103,35 @@ namespace Cutify.Controllers
             }
             catch (Exception ex)
             {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                await _errorLogRepository.LogErrorAsync(ex, "ConfirmEmail");
+                return StatusCode(500, "Email təsdiqlənməsi zamanı xəta baş verdi.");
             }
+        }
 
+        [HttpGet]
+        public IActionResult VerifyEmail() => View();
+
+        [HttpPost]
+        public async Task<IActionResult> VerifyEmail(string code1, string code2, string code3, string code4)
+        {
+            try
+            {
+                var codes = new[] { code1, code2, code3, code4 };
+                var result = await _accountService.VerifyEmailAsync(codes, HttpContext);
+
+                if (!result.Succeeded)
+                {
+                    ModelState.AddModelError("", "Daxil edilən kod yanlışdır və ya vaxtı bitmişdir.");
+                    return View();
+                }
+
+                return RedirectToAction(result.RedirectAction);
+            }
+            catch (Exception ex)
+            {
+                await _errorLogRepository.LogErrorAsync(ex, "VerifyEmail");
+                return StatusCode(500, "Kod yoxlanışı zamanı xəta baş verdi.");
+            }
         }
 
         [HttpGet]
@@ -141,11 +140,11 @@ namespace Cutify.Controllers
         [HttpPost]
         public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPasswordVM)
         {
+            if (!ModelState.IsValid)
+                return View(resetPasswordVM);
+
             try
             {
-                if (!ModelState.IsValid)
-                    return View(resetPasswordVM);
-
                 var result = await _accountService.ResetPasswordAsync(resetPasswordVM, HttpContext);
 
                 if (!result.Succeeded)
@@ -158,8 +157,8 @@ namespace Cutify.Controllers
             }
             catch (Exception ex)
             {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                await _errorLogRepository.LogErrorAsync(ex, "ResetPassword");
+                return StatusCode(500, "Şifrə sıfırlanması zamanı xəta baş verdi.");
             }
         }
 
@@ -173,10 +172,9 @@ namespace Cutify.Controllers
             }
             catch (Exception ex)
             {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                await _errorLogRepository.LogErrorAsync(ex, "SendAgain");
+                return StatusCode(500, "Kod yenidən göndərilə bilmədi.");
             }
-
         }
 
         [HttpGet]
@@ -185,15 +183,14 @@ namespace Cutify.Controllers
             try
             {
                 await _accountService.LogoutAsync(HttpContext);
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login");
             }
             catch (Exception ex)
             {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                await _errorLogRepository.LogErrorAsync(ex, "Logout");
+                return StatusCode(500, "Çıxış zamanı xəta baş verdi.");
             }
         }
-
         [HttpGet]
         [Authorize]
         public async Task<IActionResult> MyReservations(DateTime? date)
@@ -203,22 +200,25 @@ namespace Cutify.Controllers
                 var userId = User.FindFirst("UserId")?.Value;
 
                 if (string.IsNullOrEmpty(userId))
-                    return RedirectToAction("Login", "Account");
+                    return RedirectToAction("Login");
 
-                var selectedDate = date?.Date ?? DateTime.Today;
+                IQueryable<Reservation> query = _context.Reservations
+                    .Where(r => r.BarberId.ToString() == userId);
 
-                var reservations = await _context.Reservations
-                    .Where(r => r.BarberId.ToString() == userId && r.ReservationTime.Date == selectedDate)
-                    .ToListAsync();
+                if (date.HasValue)
+                {
+                    var selectedDate = date.Value.Date;
+                    query = query.Where(r => r.ReservationTime.Date == selectedDate);
+                    ViewBag.SelectedDate = selectedDate;
+                }
 
-                ViewBag.SelectedDate = selectedDate;
-
+                var reservations = await query.ToListAsync();
                 return View(reservations);
             }
             catch (Exception ex)
             {
-                await _errorLogRepository.LogErrorAsync(ex, "Search");
-                return StatusCode(500, "An error occurred while searching for barbers.");
+                await _errorLogRepository.LogErrorAsync(ex, "MyReservations");
+                return StatusCode(500, "Rezervasiyalar alınarkən xəta baş verdi.");
             }
         }
 

@@ -18,11 +18,13 @@ wwwroot\img\8691d3e1-683b-4dff-85e1-93382834a99d.jpeg
 wwwroot\img\900372fc-db5c-4fc5-8f3e-1f52877d9898.jpeg
 wwwroot\img\aa29147d-ecca-4b48-8d7f-fa5c56cbaab1.jpeg
 wwwroot\img\bg image.png
+wwwroot\img\c1214e6b-b166-427b-a21e-a13429e395be.jpeg
 wwwroot\img\ce5b17c3-1b61-4dc7-9aa1-7bee92bf797d.jpg
 wwwroot\img\dafd29d9-4e4e-4f48-8ae6-ab5fe34dc241.jpeg
 wwwroot\img\ef31ab63-8de8-4500-887b-63b11d2ff92d.jpeg
 wwwroot\img\f58818ee-92dd-4830-9545-d3f4a3021554.jpeg
 wwwroot\img\f5ad97eb-daec-47dd-b7b8-08e9e8258636.jpeg
+wwwroot\img\fdf566db-50cd-4048-9ac2-453a5b57bd9c.jpeg
 wwwroot\js\enter_info_page.js
 wwwroot\js\login_page.js
 wwwroot\js\register_page.js

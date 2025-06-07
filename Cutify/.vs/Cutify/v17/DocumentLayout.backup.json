@@ -3,68 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\reservation\\selectbarber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\reservation\\selectbarber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\repository\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\repository\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\reservation\\enterinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\reservation\\enterinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\viewmodels\\reservationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\viewmodels\\reservationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\workhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\workhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\repository\\iworkhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\repository\\iworkhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\reservation\\successmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\reservation\\successmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607080938_AddPhoneNumberUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cutify\\Migrations\\20250607080938_AddPhoneNumberUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\account\\myreservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\account\\myreservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\reservation\\enterinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\reservation\\enterinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\reservation\\successmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\reservation\\successmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\repository\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\repository\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\workhour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\reservation\\selectbarber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\reservation\\selectbarber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607112915_AddNewTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cutify\\Migrations\\20250607112915_AddNewTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\workhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\workhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\viewmodels\\reservationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\viewmodels\\reservationvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607085802_CreateWorkHourTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cutify\\Migrations\\20250607085802_CreateWorkHourTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\repository\\iworkhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\repositories\\repository\\iworkhourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -73,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\wwwroot\\css\\success_message_page.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -91,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\wwwroot\\css\\register_page.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607075444_AddAddressColumnUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cutify\\Migrations\\20250607075444_AddAddressColumnUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -103,20 +111,12 @@
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\services\\interface\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\errorlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\errorlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607072341_UpdateUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cutify\\Migrations\\20250607072341_UpdateUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -129,10 +129,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\views\\account\\myreservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\views\\account\\myreservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -279,24 +275,8 @@
       "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\wwwroot\\css\\login_page.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\migrations\\20250509052910_createusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\migrations\\20250509052910_createusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\migrations\\20250509142206_newupdatereservationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\migrations\\20250509142206_newupdatereservationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\migrations\\20250509135532_updatereservationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\migrations\\20250509135532_updatereservationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\migrations\\20250509123825_createereservationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\migrations\\20250509123825_createereservationtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\migrations\\20250509161448_createerrorlogtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\migrations\\20250509161448_createerrorlogtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|c:\\users\\lenovo\\desktop\\aspnet-quiz\\cutify\\cutify\\cutify\\migrations\\20250607113119_addnewtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E40830A5-3C1A-42FA-8FC1-7F129C87CAF4}|Cutify\\Cutify.csproj|solutionrelative:cutify\\migrations\\20250607113119_addnewtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -306,7 +286,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 58,
+          "SelectedChildIndex": 67,
           "Children": [
             {
               "$type": "Bookmark",
@@ -326,20 +306,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 68,
+              "Title": "20250607113119_AddNewTable.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607113119_AddNewTable.cs",
+              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250607113119_AddNewTable.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607113119_AddNewTable.cs",
+              "RelativeToolTip": "Cutify\\Migrations\\20250607113119_AddNewTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T11:31:19.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250607112915_AddNewTable.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607112915_AddNewTable.cs",
+              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250607112915_AddNewTable.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607112915_AddNewTable.cs",
+              "RelativeToolTip": "Cutify\\Migrations\\20250607112915_AddNewTable.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T11:29:15.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250607085802_CreateWorkHourTable.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607085802_CreateWorkHourTable.cs",
+              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250607085802_CreateWorkHourTable.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607085802_CreateWorkHourTable.cs",
+              "RelativeToolTip": "Cutify\\Migrations\\20250607085802_CreateWorkHourTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T08:58:02.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "WorkHourRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\WorkHourRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\WorkHourRepository.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\WorkHourRepository.cs",
               "RelativeToolTip": "Cutify\\Repositories\\WorkHourRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T08:28:33.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T08:28:33.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "IWorkHourRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository\\IWorkHourRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\Repository\\IWorkHourRepository.cs",
@@ -347,101 +362,47 @@
               "RelativeToolTip": "Cutify\\Repositories\\Repository\\IWorkHourRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T08:28:03.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T08:28:03.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "WorkHour.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Models\\WorkHour.cs",
               "RelativeDocumentMoniker": "Cutify\\Models\\WorkHour.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Models\\WorkHour.cs",
               "RelativeToolTip": "Cutify\\Models\\WorkHour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T08:23:32.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T08:23:32.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20250607080938_AddPhoneNumberUserTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607080938_AddPhoneNumberUserTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250607080938_AddPhoneNumberUserTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607080938_AddPhoneNumberUserTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250607080938_AddPhoneNumberUserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T08:09:38.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "20250607075444_AddAddressColumnUserTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607075444_AddAddressColumnUserTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250607075444_AddAddressColumnUserTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607075444_AddAddressColumnUserTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250607075444_AddAddressColumnUserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T07:54:45.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "20250607072341_UpdateUserTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607072341_UpdateUserTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250607072341_UpdateUserTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250607072341_UpdateUserTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250607072341_UpdateUserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T07:23:41.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "20250509161448_CreateErrorLogTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509161448_CreateErrorLogTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509161448_CreateErrorLogTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509161448_CreateErrorLogTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250509161448_CreateErrorLogTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T16:14:48.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "ErrorLogRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\ErrorLogRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\ErrorLogRepository.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\ErrorLogRepository.cs",
               "RelativeToolTip": "Cutify\\Repositories\\ErrorLogRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T15:59:02.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "ReservationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\ReservationRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\ReservationRepository.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\ReservationRepository.cs",
               "RelativeToolTip": "Cutify\\Repositories\\ReservationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:58:18.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:58:18.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\UserRepository.cs",
@@ -453,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "IErrorLogRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository\\IErrorLogRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\Repository\\IErrorLogRepository.cs",
@@ -465,20 +426,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "IReservationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository\\IReservationRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\Repository\\IReservationRepository.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository\\IReservationRepository.cs",
               "RelativeToolTip": "Cutify\\Repositories\\Repository\\IReservationRepository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvwoAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:52:03.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:52:03.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\Repository\\IUserRepository.cs",
@@ -490,20 +450,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\Repository.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository.cs",
               "RelativeToolTip": "Cutify\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:50:06.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:50:06.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Repositories\\Repository\\IRepository.cs",
               "RelativeDocumentMoniker": "Cutify\\Repositories\\Repository\\IRepository.cs",
@@ -515,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ErrorLog.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Models\\ErrorLog.cs",
               "RelativeDocumentMoniker": "Cutify\\Models\\ErrorLog.cs",
@@ -523,12 +482,11 @@
               "RelativeToolTip": "Cutify\\Models\\ErrorLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T15:47:42.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T15:47:42.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "enter_info_page.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\enter_info_page.js",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\js\\enter_info_page.js",
@@ -540,43 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "20250509142206_NewUpdateReservationTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509142206_NewUpdateReservationTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509142206_NewUpdateReservationTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509142206_NewUpdateReservationTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250509142206_NewUpdateReservationTable.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T14:22:06.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "20250509135532_updateReservationTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509135532_updateReservationTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509135532_updateReservationTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509135532_updateReservationTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250509135532_updateReservationTable.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T13:55:32.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "20250509123825_CreateeReservationTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509123825_CreateeReservationTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509123825_CreateeReservationTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509123825_CreateeReservationTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250509123825_CreateeReservationTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T12:38:26.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 5,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Models\\Reservation.cs",
               "RelativeDocumentMoniker": "Cutify\\Models\\Reservation.cs",
@@ -589,20 +511,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "ReservationVM.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\ViewModels\\ReservationVM.cs",
               "RelativeDocumentMoniker": "Cutify\\ViewModels\\ReservationVM.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\ViewModels\\ReservationVM.cs",
               "RelativeToolTip": "Cutify\\ViewModels\\ReservationVM.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAwAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:45:53.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T11:45:53.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "select_barber_page.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\select_barber_page.js",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\js\\select_barber_page.js",
@@ -614,20 +535,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "Cutify\\Services\\AccountService.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\AccountService.cs",
               "RelativeToolTip": "Cutify\\Services\\AccountService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwGAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T09:36:07.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\Interface\\IAccountService.cs",
               "RelativeDocumentMoniker": "Cutify\\Services\\Interface\\IAccountService.cs",
@@ -635,12 +556,11 @@
               "RelativeToolTip": "Cutify\\Services\\Interface\\IAccountService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:35:51.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T09:35:51.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "ResetPasswordVM.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\ViewModels\\ResetPasswordVM.cs",
               "RelativeDocumentMoniker": "Cutify\\ViewModels\\ResetPasswordVM.cs",
@@ -652,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "reset_password_page.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\reset_password_page.js",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\js\\reset_password_page.js",
@@ -664,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "reset_password_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\reset_password_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\reset_password_page.css",
@@ -676,19 +596,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Account\\ResetPassword.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\ResetPassword.cshtml",
               "RelativeToolTip": "Cutify\\Views\\Account\\ResetPassword.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAABwAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBkAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-09T07:39:39.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "ConfirmEmailVM.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\ViewModels\\ConfirmEmailVM.cs",
               "RelativeDocumentMoniker": "Cutify\\ViewModels\\ConfirmEmailVM.cs",
@@ -700,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "LoginVM.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\ViewModels\\LoginVM.cs",
               "RelativeDocumentMoniker": "Cutify\\ViewModels\\LoginVM.cs",
@@ -712,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "PasswordHash.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Helper\\PasswordHash.cs",
               "RelativeDocumentMoniker": "Cutify\\Helper\\PasswordHash.cs",
@@ -724,55 +644,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "20250509052910_CreateUserTable.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052910_CreateUserTable.cs",
-              "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509052910_CreateUserTable.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052910_CreateUserTable.cs",
-              "RelativeToolTip": "Cutify\\Migrations\\20250509052910_CreateUserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T05:29:10.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "20250509052608_AddKeyUserTable.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052608_AddKeyUserTable.cs",
               "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509052608_AddKeyUserTable.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052608_AddKeyUserTable.cs",
               "RelativeToolTip": "Cutify\\Migrations\\20250509052608_AddKeyUserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T05:26:08.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "20250509052252_UpdateUserTable.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052252_UpdateUserTable.cs",
               "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509052252_UpdateUserTable.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052252_UpdateUserTable.cs",
               "RelativeToolTip": "Cutify\\Migrations\\20250509052252_UpdateUserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T05:22:52.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "20250509052048_CreateUserTable.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052048_CreateUserTable.cs",
               "RelativeDocumentMoniker": "Cutify\\Migrations\\20250509052048_CreateUserTable.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Migrations\\20250509052048_CreateUserTable.cs",
               "RelativeToolTip": "Cutify\\Migrations\\20250509052048_CreateUserTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T05:20:48.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "verify.html",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\templates\\verify.html",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\templates\\verify.html",
@@ -784,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "IFileService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\Interface\\IFileService.cs",
               "RelativeDocumentMoniker": "Cutify\\Services\\Interface\\IFileService.cs",
@@ -796,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "Cutify\\Services\\FileService.cs",
@@ -808,19 +713,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Cutify\\Services\\EmailService.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\EmailService.cs",
               "RelativeToolTip": "Cutify\\Services\\EmailService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T03:58:18.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\Interface\\IEmailService.cs",
               "RelativeDocumentMoniker": "Cutify\\Services\\Interface\\IEmailService.cs",
@@ -832,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Services\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Cutify\\Services\\Mappings\\MappingProfile.cs",
@@ -844,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Models\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Cutify\\Models\\BaseEntity.cs",
@@ -852,21 +757,19 @@
               "RelativeToolTip": "Cutify\\Models\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T03:45:09.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T03:45:09.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "Cutify\\Models\\AppUser.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Models\\AppUser.cs",
               "RelativeToolTip": "Cutify\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T03:44:47.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T03:44:47.338Z"
             },
             {
               "$type": "Document",
@@ -878,12 +781,11 @@
               "RelativeToolTip": "Cutify\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T03:42:47.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T03:42:47.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Cutify\\Data\\AppDbContext.cs",
@@ -891,12 +793,11 @@
               "RelativeToolTip": "Cutify\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T03:42:11.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T03:42:11.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "RegisterVM.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "Cutify\\ViewModels\\RegisterVM.cs",
@@ -904,12 +805,11 @@
               "RelativeToolTip": "Cutify\\ViewModels\\RegisterVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T03:31:04.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T03:31:04.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "my_reservations_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\my_reservations_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\my_reservations_page.css",
@@ -917,24 +817,24 @@
               "RelativeToolTip": "Cutify\\wwwroot\\css\\my_reservations_page.css",
               "ViewState": "AgIAAJIAAAAAAAAAAAAswKoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-08T17:29:35.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T17:29:35.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 2,
               "Title": "MyReservations.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\MyReservations.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Account\\MyReservations.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\MyReservations.cshtml",
               "RelativeToolTip": "Cutify\\Views\\Account\\MyReservations.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvzUAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwCgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T17:28:53.964Z"
+              "WhenOpened": "2025-05-08T17:28:53.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "success_message_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\success_message_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\success_message_page.css",
@@ -942,25 +842,23 @@
               "RelativeToolTip": "Cutify\\wwwroot\\css\\success_message_page.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-08T17:23:34.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T17:23:34.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "SuccessMessage.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Reservation\\SuccessMessage.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Reservation\\SuccessMessage.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Reservation\\SuccessMessage.cshtml",
               "RelativeToolTip": "Cutify\\Views\\Reservation\\SuccessMessage.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T17:22:35.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T17:22:35.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "enter_info_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\enter_info_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\enter_info_page.css",
@@ -972,41 +870,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "EnterInfo.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Reservation\\EnterInfo.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Reservation\\EnterInfo.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Reservation\\EnterInfo.cshtml",
               "RelativeToolTip": "Cutify\\Views\\Reservation\\EnterInfo.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwFkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAFMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-08T17:14:02.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "select_barber_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\select_barber_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\select_barber_page.css",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\select_barber_page.css",
               "RelativeToolTip": "Cutify\\wwwroot\\css\\select_barber_page.css",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAIBJwA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-05-08T16:58:45.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "SelectBarber.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Reservation\\SelectBarber.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Reservation\\SelectBarber.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Reservation\\SelectBarber.cshtml",
               "RelativeToolTip": "Cutify\\Views\\Reservation\\SelectBarber.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwFIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEsAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T16:57:19.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T16:57:19.664Z"
             },
             {
               "$type": "Document",
@@ -1016,14 +913,14 @@
               "RelativeDocumentMoniker": "Cutify\\Controllers\\ReservationController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Controllers\\ReservationController.cs",
               "RelativeToolTip": "Cutify\\Controllers\\ReservationController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAYwGoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANwAAAAAAAAAAAAAwJ8AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T16:56:26.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "login_page.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\login_page.js",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\js\\login_page.js",
@@ -1035,19 +932,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "register_page.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\register_page.js",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\js\\register_page.js",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\register_page.js",
               "RelativeToolTip": "Cutify\\wwwroot\\js\\register_page.js",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-05-07T05:35:59.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "verify_email_page.js",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\js\\verify_email_page.js",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\js\\verify_email_page.js",
@@ -1059,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "confirm_email_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\confirm_email_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\confirm_email_page.css",
@@ -1071,19 +968,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "ConfirmEmail.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\ConfirmEmail.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Account\\ConfirmEmail.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\ConfirmEmail.cshtml",
               "RelativeToolTip": "Cutify\\Views\\Account\\ConfirmEmail.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-07T04:58:30.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "verify_email_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\verify_email_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\verify_email_page.css",
@@ -1095,7 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "VerifyEmail.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\VerifyEmail.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Account\\VerifyEmail.cshtml",
@@ -1107,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "login_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\login_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\login_page.css",
@@ -1119,33 +1016,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "register_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\register_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\register_page.css",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\register_page.css",
               "RelativeToolTip": "Cutify\\wwwroot\\css\\register_page.css",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-07T04:18:18.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T04:18:18.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "Cutify\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEYAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAIBJwEYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T04:17:30.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T04:17:30.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "login_page.css",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\login_page.css",
               "RelativeDocumentMoniker": "Cutify\\wwwroot\\css\\login_page.css",
@@ -1157,7 +1052,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\Account\\Login.cshtml",
@@ -1169,13 +1064,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Cutify\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Cutify\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAA5wD0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAwNkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T04:11:37.578Z",
               "EditorCaption": ""
@@ -1190,18 +1085,17 @@
               "RelativeToolTip": "Cutify\\wwwroot\\css\\home_page.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-07T04:08:32.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T04:08:32.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Program.cs",
               "RelativeDocumentMoniker": "Cutify\\Program.cs",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Program.cs",
               "RelativeToolTip": "Cutify\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAjwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAjwCsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T09:38:14.052Z",
               "EditorCaption": ""
@@ -1220,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Cutify\\Views\\_ViewImports.cshtml",
@@ -1232,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Cutify\\Controllers\\HomeController.cs",
@@ -1240,8 +1134,7 @@
               "RelativeToolTip": "Cutify\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:28:49.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T09:28:49.157Z"
             },
             {
               "$type": "Bookmark",

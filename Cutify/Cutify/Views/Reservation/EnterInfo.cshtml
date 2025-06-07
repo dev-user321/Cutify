@@ -19,30 +19,24 @@
                 <a asp-controller="Reservation" asp-action="SelectBarber"><i class="fas fa-chevron-left"></i></a>
             </div>
         </div>
-
         <div class="header">
             <div class="title">Bərbərini seç</div>
         </div>
-
         <div class="description">
             Şəxsi məlumatlarını yazaraq rezervasiyanı asanlıqla tamamlaya bilərsən.
         </div>
-
         <div class="progress-bar">
             <div class="progress-section"></div>
             <div class="progress-section"></div>
         </div>
-
         <div class="form-container">
             <form asp-controller="Reservation" asp-action="EnterInfo" method="post">
                 <div asp-validation-summary="All"></div>
                 <input type="hidden" asp-for="BarberId" />
-
                 <div class="form-group">
                     <label class="form-label">Bərbərin adı və soyadı</label>
-                    <input type="text" class="form-input" value="@Model.BarberFullName" asp-for="BarberFullName" readonly/>
+                    <input type="text" class="form-input" asp-for="BarberFullName" readonly />
                 </div>
-
                 <div class="form-row">
                     <div class="form-col">
                         <div class="form-group">
@@ -63,107 +57,81 @@
                             </select>
                             <span asp-validation-for="Time" class="validation-message"></span>
                         </div>
-
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label class="form-label">Ad və soyadın</label>
                     <input type="text" class="form-input" asp-for="FullName" placeholder="Adınızı və soyadınızı daxil edin" />
                     <span asp-validation-for="FullName" class="validation-message"></span>
                 </div>
-
                 <div class="form-group">
                     <label class="form-label">Mobil nömrən</label>
                     <input type="tel" class="form-input" asp-for="PhoneNumber" placeholder="+994 XX XXX XX XX" />
                     <span asp-validation-for="PhoneNumber" class="validation-message"></span>
                 </div>
-
                 <button type="submit" class="submit-button">Tamamla</button>
             </form>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
-    @* <script > *@
-    @*     // Dolu saatları yeniləyir *@
-    @*     function updateOccupiedTimes() { *@
-    @*         const barberId = @Model.BarberId; *@
-    @*         const selectedDate = document.getElementById("date-picker").value; *@
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    @*         if (!selectedDate) { *@
-    @*             fillAvailableTimes([]); // Tarix seçilməyibsə, bütün saatları göstər *@
-    @*             return; *@
-    @*         } *@
+    <script>
+               $(document).ready(function () {
+            flatpickr("#date-picker", {
+                dateFormat: "d.m.Y",
+                defaultDate: "today",
+                allowInput: true,
+                minDate: "today",
+                locale: {
+                    firstDayOfWeek: 1,
+                    weekdays: {
+                        shorthand: ['B', 'Be', 'Ç', 'Ça', 'Ca', 'C', 'Ş'],
+                        longhand: ['Bazar', 'Bazar ertəsi', 'Çərşənbə axşamı', 'Çərşənbə', 'Cümə axşamı', 'Cümə', 'Şənbə']
+                    },
+                    months: {
+                        shorthand: ['Yan', 'Fev', 'Mar', 'Apr', 'May', 'İyn', 'İyl', 'Avq', 'Sen', 'Okt', 'Noy', 'Dek'],
+                        longhand: ['Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'İyun', 'İyul', 'Avqust', 'Sentyabr', 'Oktyabr', 'Noyabr', 'Dekabr']
+                    }
+                }
+            });
 
-    @*         fetch(`/Reservation/GetOccupiedTimes?barberId=${barberId}&date=${selectedDate}`, { *@
-    @*             method: 'GET' *@
-    @*         }) *@
-    @*             .then(response => response.json()) *@
-    @*             .then(occupiedTimes => { *@
-    @*                 fillAvailableTimes(occupiedTimes); *@
-    @*             }) *@
-    @*             .catch(error => { *@
-    @*                 console.error("Xəta baş verdi:", error); *@
-    @*                 fillAvailableTimes([]); // Xəta olarsa bütün saatları göstər *@
-    @*             }); *@
-    @*     } *@
+            function loadAvailableTimes(selectedDate) {
+                var barberId = $('input[name="BarberId"]').val();
 
-    @*     // Mövcud saatları doldurur (dolu saatlar çıxarılır) *@
-    @*     function fillAvailableTimes(occupiedTimes) { *@
-    @*         const allTimes = [ *@
-    @*             "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", *@
-    @*             "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", *@
-    @*             "15:00", "15:30", "16:00", "16:30", "17:00", "17:30" *@
-    @*         ]; *@
+                $.ajax({
+                    url: '/Reservation/GetAvailableTimes',
+                    type: 'GET',
+                    data: { barberId: barberId, selectedDate: selectedDate },
+                    success: function (data) {
+                        var timePicker = $('#time-picker');
+                        timePicker.empty();
+                        timePicker.append('<option value="">Saat seçin</option>');
 
-    @*         // Mövcud saatları filtr edirik *@
-    @*         const availableTimes = allTimes.filter(time => !occupiedTimes.includes(time)); *@
+                        $.each(data, function (index, time) {
+                            timePicker.append('<option value="' + time + '">' + time + '</option>');
+                        });
+                    },
+                    error: function () {
+                        alert('Saatları yükləmək mümkün olmadı.');
+                    }
+                });
+            }
 
-    @*         const timeSelect = document.getElementById("time-picker"); *@
-    @*         timeSelect.innerHTML = "<option value=''>Saat seçin</option>"; // Başlıq *@
+            // Tarix dəyişdikdə yenidən saatları yüklə
+            $('#date-picker').change(function () {
+                var selectedDate = $(this).val();
+                loadAvailableTimes(selectedDate);
+            });
 
-    @*         // Yalnız mövcud saatları əlavə edirik *@
-    @*         availableTimes.forEach(time => { *@
-    @*             const option = document.createElement("option"); *@
-    @*             option.value = time; *@
-    @*             option.textContent = time; *@
-    @*             timeSelect.appendChild(option); *@
-    @*         }); *@
+            // ✳️ Səhifə ilk yüklənəndə də bugünkü tarix üçün saatları avtomatik yüklə
+            var initialDate = $('#date-picker').val();
+            if (initialDate) {
+                loadAvailableTimes(initialDate);
+            }
+        });
 
-    @*         // Əgər heç bir mövcud saat yoxdursa *@
-    @*         if (availableTimes.length === 0) { *@
-    @*             const option = document.createElement("option"); *@
-    @*             option.disabled = true; *@
-    @*             option.textContent = "Mövcud saat yoxdur"; *@
-    @*             timeSelect.appendChild(option); *@
-    @*         } *@
-    @*     } *@
-
-    @*     // Səhifə yükləndikdə və tarix seçildikdə saatları yeniləyirik *@
-    @*     document.addEventListener("DOMContentLoaded", function () { *@
-    @*         flatpickr("#date-picker", { *@
-    @*             dateFormat: "Y-m-d", *@
-    @*             minDate: "today", // Bu günün tarixindən əvvəl tarix seçilməsi mümkün deyil *@
-    @*             disableMobile: true, *@
-    @*             onChange: updateOccupiedTimes // Tarix dəyişildikdə mövcud saatları yenilə *@
-    @*         }); *@
-
-    @*         updateOccupiedTimes(); // İlk açılışda saatları yüklə *@
-    @*     }); *@
-
-    @*     document.addEventListener("DOMContentLoaded", function () { *@
-    @*         flatpickr("#date-picker", { *@
-    @*             dateFormat: "Y-m-d", *@
-    @*             minDate: "today", // Keçmiş tarixlərə icazə verilmir *@
-    @*             defaultDate: "today", // Cari gün göstərilir *@
-    @*             disableMobile: true, *@
-    @*             onChange: updateOccupiedTimes // Tarix dəyişildikdə mövcud saatları yenilə *@
-    @*         }); *@
-
-    @*         updateOccupiedTimes(); // İlk açılışda saatları yüklə *@
-    @*     }); *@
-
-    @* </script> *@
+    </script>
 </body>
 </html>

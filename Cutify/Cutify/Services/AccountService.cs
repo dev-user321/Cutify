@@ -167,7 +167,7 @@ namespace Cutify.Services
         public async Task<IEnumerable<Reservation>> GetMyReservationsAsync(string userId, DateTime selectedDate)
         {
             return await _context.Reservations
-                .Where(r => r.BarberId.ToString() == userId && r.ReservationTime.Date == selectedDate)
+                .Where(r => r.BarberId.ToString() == userId && r.ReservationTime.Date == selectedDate.Date)
                 .ToListAsync();
         }
 

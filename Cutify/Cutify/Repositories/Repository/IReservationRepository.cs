@@ -8,8 +8,10 @@ namespace Cutify.Repositories.Repository
     {
         Task<List<string>> GetOccupiedTimesAsync(int barberId, DateTime date);
         Task AddReservationAsync(Reservation reservation);
-        Task<List<string>> GetReservedTimesAsync(int barberId, DateTime date);
+        Task<List<Reservation>> GetReservationsByBarberAndDateAsync(int barberId, DateTime date);
+
+
     }
 
-    
+
 }
