@@ -38,7 +38,11 @@
             @foreach (var reservation in Model)
             {
                 <div class="reservation-card">
-                    <div class="reservation-time">@reservation.ReservationTime</div>
+                    <div class="reservation-time">
+                        <p> @reservation.ReservationTime.ToLocalTime().ToString("dd.MM.yyyy")</p>
+                        <p style="text-align:center;"> @reservation.Time </p>
+
+                    </div>
                     <div class="customer-name">@reservation.FullName</div>
                     <div class="customer-phone">@reservation.PhoneNumber</div>
                 </div>
