@@ -126,8 +126,8 @@ namespace Cutify.Controllers
 
         public static List<TimeSpan> GetAvailableSlots(List<Reservation> allReservations, DateTime selectedDate)
         {
-            TimeSpan startTime = new TimeSpan(9, 0, 0);
-            TimeSpan endTime = new TimeSpan(18, 0, 0);
+            TimeSpan startTime = new TimeSpan(10, 0, 0); 
+            TimeSpan endTime = new TimeSpan(23, 0, 0);  
             List<TimeSpan> availableSlots = new();
 
             var reservedSlots = allReservations
@@ -143,6 +143,7 @@ namespace Cutify.Controllers
 
             return availableSlots;
         }
+
 
         [HttpPost]
         public async Task<IActionResult> EnterInfo(ReservationVM model)
