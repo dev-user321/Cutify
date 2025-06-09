@@ -216,6 +216,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\0a74c7ee-0ce0-46fb-9a32-14dfeab5bcc9OIP (3).jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Cutify</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Cutify</BasePath>
+      <RelativePath>img/0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>k9zo4xm394</Fingerprint>
+      <Integrity>iJCGGlxWy0ZuvprdSQgyuJrouQC7BfCWtqYxLM25e8Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\116bca4f-c582-42f7-a571-505705c4597c.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>Cutify</SourceId>

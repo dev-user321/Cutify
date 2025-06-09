@@ -10,6 +10,7 @@ wwwroot\css\success_message_page.css
 wwwroot\css\verify_email_page.css
 wwwroot\img\041afb91-5763-444f-92fd-f76f3d28a066.jpeg
 wwwroot\img\0a74c7ee-0ce0-46fb-9a32-14dfeab5bcc9OIP (3).jpeg
+wwwroot\img\0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg
 wwwroot\img\116bca4f-c582-42f7-a571-505705c4597c.jpeg
 wwwroot\img\1222f6e7-e76c-45c3-acc0-c9af933be2a9.jpeg
 wwwroot\img\157ea9c5-bd48-49ce-892d-12a2370670c4.jpeg

@@ -144,6 +144,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rOxrEC7EQoPt\u002BU7t6ow4LSmN9sbpPi0Hn0NxFiTwJjY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9383"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022rOxrEC7EQoPt\u002BU7t6ow4LSmN9sbpPi0Hn0NxFiTwJjY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 09 May 2025 09:21:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Cutify/img/0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-iJCGGlxWy0ZuvprdSQgyuJrouQC7BfCWtqYxLM25e8Y="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"14963"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iJCGGlxWy0ZuvprdSQgyuJrouQC7BfCWtqYxLM25e8Y=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 18:55:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Cutify/img/0d510775-aca1-41d4-9f24-7c83c148f2c5.k9zo4xm394.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k9zo4xm394"},{"Name":"integrity","Value":"sha256-iJCGGlxWy0ZuvprdSQgyuJrouQC7BfCWtqYxLM25e8Y="},{"Name":"label","Value":"_content/Cutify/img/0d510775-aca1-41d4-9f24-7c83c148f2c5.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14963"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022iJCGGlxWy0ZuvprdSQgyuJrouQC7BfCWtqYxLM25e8Y=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 18:55:50 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Cutify/img/116bca4f-c582-42f7-a571-505705c4597c.di2fjpswus.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\116bca4f-c582-42f7-a571-505705c4597c.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
