@@ -8,6 +8,7 @@
             const defaultIcon = document.getElementById('default-icon');
 
             // Display the image
+            // Sekilin gosterilmesi
             profileImage.src = event.target.result;
             profileImage.style.display = 'block';
 
@@ -21,6 +22,7 @@
 
 
 // Password visibility toggle
+// 
 document.querySelector('.password-toggle').addEventListener('click', function () {
     const passwordField = document.getElementById('password');
     const icon = document.getElementById('password-toggle-icon');
