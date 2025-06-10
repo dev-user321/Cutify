@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>oyr88dy0zp</Fingerprint>
-      <Integrity>cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI=</Integrity>
+      <Fingerprint>ya3vu3qnqm</Fingerprint>
+      <Integrity>ekyYftMe3oBKPa0wLEu9h52P8fd1wuIIc/GnA3s2kpk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\my_reservations_page.css'))</OriginalItemSpec>

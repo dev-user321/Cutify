@@ -176,6 +176,19 @@ namespace Cutify.Controllers
                 return View(model);
             }
         }
+        [HttpPost]
+        public IActionResult DeleteReservation(int id, DateTime? selectedDate)
+        {
+            var reservation = _context.Reservations.FirstOrDefault(x => x.Id == id);
+            if (reservation != null)
+            {
+                _context.Reservations.Remove(reservation);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction("MyReservations", "Account", new { date = selectedDate });
+        }
+
 
         private void WriteReservationCookies(ReservationVM model, AppUser barber)
         {

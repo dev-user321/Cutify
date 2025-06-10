@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+5qVHkgGFjSHSPwvLVHSrsZ57+UZm38exeTre+hSR4w=",
+  "Hash": "mNX6MvUXL+1+GZ700pXfvAGelV8Kh+bDdduhaAuG5po=",
   "Source": "Cutify",
   "BasePath": "_content/Cutify",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "oyr88dy0zp",
-      "Integrity": "cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI=",
+      "Fingerprint": "ya3vu3qnqm",
+      "Integrity": "ekyYftMe3oBKPa0wLEu9h52P8fd1wuIIc/GnA3s2kpk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\my_reservations_page.css"
@@ -1092,7 +1092,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3146"
+          "Value": "3333"
         },
         {
           "Name": "Content-Type",
@@ -1100,11 +1100,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI=\""
+          "Value": "\"ekyYftMe3oBKPa0wLEu9h52P8fd1wuIIc/GnA3s2kpk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 19:05:15 GMT"
+          "Value": "Mon, 09 Jun 2025 13:23:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1114,12 +1114,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI="
+          "Value": "sha256-ekyYftMe3oBKPa0wLEu9h52P8fd1wuIIc/GnA3s2kpk="
         }
       ]
     },
     {
-      "Route": "css/my_reservations_page.oyr88dy0zp.css",
+      "Route": "css/my_reservations_page.ya3vu3qnqm.css",
       "AssetFile": "C:\\Users\\Lenovo\\Desktop\\AspNet-Quiz\\Cutify\\Cutify\\Cutify\\wwwroot\\css\\my_reservations_page.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1129,7 +1129,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3146"
+          "Value": "3333"
         },
         {
           "Name": "Content-Type",
@@ -1137,11 +1137,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI=\""
+          "Value": "\"ekyYftMe3oBKPa0wLEu9h52P8fd1wuIIc/GnA3s2kpk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 09 May 2025 19:05:15 GMT"
+          "Value": "Mon, 09 Jun 2025 13:23:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1151,7 +1151,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "oyr88dy0zp"
+          "Value": "ya3vu3qnqm"
         },
         {
           "Name": "label",
@@ -1159,7 +1159,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cER7ke3fFKb7Uu/ehFThAw6vBu/0PBwrghuqZISXLOI="
+          "Value": "sha256-ekyYftMe3oBKPa0wLEu9h52P8fd1wuIIc/GnA3s2kpk="
         }
       ]
     },

@@ -39,27 +39,37 @@
             {
                 <div class="reservation-card">
                     <div class="reservation-time">
-                        <p> @reservation.ReservationTime.ToLocalTime().ToString("dd.MM.yyyy")</p>
-                        <p style="text-align:center;"> @reservation.Time </p>
-
+                        <p>@reservation.ReservationTime.ToLocalTime().ToString("dd.MM.yyyy")</p>
+                        <p style="text-align:center;">@reservation.Time</p>
                     </div>
                     <div class="customer-name">@reservation.FullName</div>
                     <div class="customer-phone">@reservation.PhoneNumber</div>
+
+                    <form asp-controller="Reservation" asp-action="DeleteReservation" method="post" class="delete-form" onsubmit="return confirmDelete();">
+                        <input type="hidden" name="id" value="@reservation.Id" />
+                        <input type="hidden" name="selectedDate" value="@ViewBag.SelectedDate?.ToString("yyyy-MM-dd")" />
+                        <button type="submit" class="delete-button">
+                            <i class="fas fa-trash-alt"></i> Sil
+                        </button>
+                    </form>
+
                 </div>
             }
-
         </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
             flatpickr("#selectedDate", {
             dateFormat: "d-m-Y",
-            minDate: "today",
             defaultDate: "today", 
             locale: {
                 firstDayOfWeek: 1
             }
         });
+            function confirmDelete() {
+            return confirm("Bu rezervasiyanı silmək istədiyinizə əminsiniz?");
+        }
     </script>
 </body>
 </html>

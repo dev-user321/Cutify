@@ -212,7 +212,10 @@ namespace Cutify.Controllers
                     ViewBag.SelectedDate = selectedDate;
                 }
 
-                var reservations = await query.ToListAsync();
+                var reservations = await query
+                    .OrderBy(r => r.ReservationTime)
+                    .ToListAsync();
+
                 return View(reservations);
             }
             catch (Exception ex)
@@ -221,6 +224,7 @@ namespace Cutify.Controllers
                 return StatusCode(500, "Rezervasiyalar alınarkən xəta baş verdi.");
             }
         }
+
 
     }
 }
